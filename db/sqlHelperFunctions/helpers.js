@@ -10,15 +10,17 @@ const pool = new Pool({
 
 ///template:
 
-const sqlQuery = `SELECT ...`;
+// const sqlQuery = `SELECT id, name, email
+// FROM users
+// LIMIT 3;`;
 
-pool.query(sqlQuery, [`%${cohortInput}%`])
-.then(res => {
-  res.rows.forEach(row => {
-    console.log(`${row.cohort}: ${row.teacher}`);
-  })
-})
-.catch(err => console.error('query error', err.stack));
+// pool.query(sqlQuery, [`%${cohortInput}%`])
+// .then(res => {
+//   res.rows.forEach(row => {
+//     console.log(`${row.cohort}: ${row.teacher}`);
+//   })
+// })
+// .catch(err => console.error('query error', err.stack));
 
 
 //get user
@@ -30,9 +32,7 @@ const getUserWithId = function(id) {
     `, [id])
     .then(res => {
       return res.rows[0];
-    })
-  
-   
+    })   
   };
   exports.getUserWithId = getUserWithId;
 
