@@ -83,7 +83,7 @@ INSERT INTO requestMoney(
   decided,
   decision_updated_at
 )
-VALUES(1, 1, 1, 'www.amazon.com', 100, 'www.sephora.com',NOW(), false ,NOW() );
+VALUES(1, 1, 1, 'www.amazon.com', 100,NOW(), false ,NOW() );
 
 INSERT INTO approveRequestMoney(
   id,
