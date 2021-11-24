@@ -47,7 +47,7 @@ INSERT INTO recent_transactions (
   account_number,
   transaction_amount,
   transaction_note,
-  created_at,
+  created_at
 )
 VALUES(1, 1, 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 50, 'www.sephora.com', now );
 
@@ -60,7 +60,7 @@ INSERT INTO requestMoney(
   request_amount,
   created_at,
   decided,
-  decision_updated_at,
+  decision_updated_at
 )
 VALUES(1, 1, 1, "www.amazon.com", 100, "www.sephora.com", now, false ,now );
 
@@ -72,7 +72,7 @@ INSERT INTO approveRequestMoney(
   request_amount,
   created_at,
   decided,
-  decision_updated_at,
+  decision_updated_at
 )
 VALUES(1, 1, 1, 'www.amazon.com', 100, 'www.sephora.com', now, true ,now );
 
@@ -80,9 +80,9 @@ INSERT INTO accountSetting(
   child_id,
   parent_id,
   active,
-  created_at,
+  created_at
 )
-VALUES(1, 1, true, 2021/11/11)
+VALUES(1, 1, true, 2021/11/11);
 
 INSERT INTO sendMoney(
   id,
@@ -115,7 +115,7 @@ INSERT INTO parents(
   background_color,
   header_color,
   created_at,
-  updated_at,
+  updated_at
 )
 
 VALUES(1, 1, 1, 'Money from Mom', 50, 2021/11/22);
