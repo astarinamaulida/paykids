@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS recent_transactions CASCADE;
 DROP TABLE IF EXISTS requestMoney CASCADE;
 DROP TABLE IF EXISTS approveRequestMoney CASCADE;
 DROP TABLE IF EXISTS accountSetting CASCADE;
-DROP TABLE IF EXISTS sendMoneyMoney CASCADE;
+DROP TABLE IF EXISTS sendMoney CASCADE;
 DROP TABLE IF EXISTS parents CASCADE;
 
 CREATE TABLE children (
@@ -14,8 +14,8 @@ CREATE TABLE children (
   "account_number" varchar,
   "account_password" varchar,
   "expiry_date" timestamp,
-  "start_date" datetime,
-  "end_date" datetime,
+  "start_date" date,
+  "end_date" date,
   "active" boolean,
   "account_balance" integer,
   "account_cvv" integer,
@@ -29,8 +29,8 @@ CREATE TABLE children (
   "card_color" varchar,
   "background_color" varchar,
   "header_color" varchar,
-  "created_at" datetime DEFAULT (now()),
-  "updated_at" timestamp
+  "created_at" date DEFAULT (now()),
+  "updated_at" date
 );
 
 CREATE TABLE childAccount (
@@ -41,7 +41,7 @@ CREATE TABLE childAccount (
   "account_number" varchar,
   "account_balance" integer,
   "account_cvv" integer,
-  "expiry_date" timestamp
+  "expiry_date" date
 );
 
 CREATE TABLE recent_transactions (
@@ -50,7 +50,7 @@ CREATE TABLE recent_transactions (
   "account_number" varchar,
   "transaction_amount" integer,
   "transaction_note" varchar,
-  "created_at" datetime DEFAULT (now())
+  "created_at" date DEFAULT (now())
 );
 
 CREATE TABLE requestMoney (
@@ -60,9 +60,9 @@ CREATE TABLE requestMoney (
   "request_note" varchar,
   "request_amount" integer,
   "request_number" integer,
-  "created_at" datetime DEFAULT (now()),
+  "created_at" date DEFAULT (now()),
   "decided" boolean,
-  "decision_updated_at" datetime DEFAULT (now())
+  "decision_updated_at" date DEFAULT (now())
 );
 
 CREATE TABLE approveRequestMoney (
@@ -71,16 +71,16 @@ CREATE TABLE approveRequestMoney (
   "parent_id" varchar,
   "request_note" varchar,
   "request_amount" integer,
-  "created_at" datetime DEFAULT (now()),
+  "created_at" date DEFAULT (now()),
   "decided" boolean,
-  "decision_updated_at" datetime DEFAULT (now())
+  "decision_updated_at" date DEFAULT (now())
 );
 
 CREATE TABLE accountSetting (
   "child_id" varchar,
   "parent_id" varchar,
   "active" boolean,
-  "created_at" datetime DEFAULT (now())
+  "created_at" date DEFAULT (now())
 );
 
 CREATE TABLE sendMoney (
@@ -89,7 +89,7 @@ CREATE TABLE sendMoney (
   "parent_id" varchar,
   "send_money_note" varchar,
   "send_amount" integer,
-  "created_at" datetime DEFAULT (now())
+  "created_at" date DEFAULT (now())
 );
 
 CREATE TABLE parents (
@@ -112,10 +112,10 @@ CREATE TABLE parents (
   "text_color" varchar,
   "background_color" varchar,
   "header_color" varchar,
-  "created_at" datetime DEFAULT (now()),
-  "updated_at" timestamp
+  "created_at" date DEFAULT (now()),
+  "updated_at" date
 );
 
 
 
-//-- to run : \i  db/schema/01_data.sql
+-- to run : \i  db/schema/01_data.sql
