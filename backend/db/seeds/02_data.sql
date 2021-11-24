@@ -161,5 +161,6 @@ VALUES(
   'text_color_blue',
   'bg_color',
   'header color',  
+  '2021-10-18',
   '2021-10-18'
   );

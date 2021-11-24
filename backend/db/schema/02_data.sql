@@ -101,7 +101,7 @@ CREATE TABLE parents (
   "ewallet_password" varchar,
   "bank_account_number" varchar,
   "active" boolean,
-  "street_number" varchar,
+  "street_number" integer,
   "street" varchar,
   "city" varchar,
   "postal_code" varchar,
