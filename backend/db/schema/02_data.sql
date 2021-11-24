@@ -29,8 +29,9 @@ CREATE TABLE children (
   "card_color" varchar,
   "background_color" varchar,
   "header_color" varchar,
-  "created_at" date DEFAULT (now()),
-  "updated_at" date
+  "updated_at" date,
+  "created_at" date DEFAULT (now())
+
 );
 
 CREATE TABLE childAccount (
