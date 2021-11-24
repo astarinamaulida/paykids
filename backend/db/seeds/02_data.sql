@@ -8,7 +8,7 @@ INSERT INTO childAccount (
   account_cvv, 
   expiry_date)
 VALUES
-  (1, 1, 'Tina', 'Toaster', 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 125, 111, 2025/12/01);
+  (1, 1, 'Tina', 'Toaster', 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 125, 111, '2021-10-18');
 
 
 INSERT INTO children (
@@ -38,7 +38,7 @@ INSERT INTO children (
 )
 VALUES
   (1, 'Tina', 'Toaster', 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 
-  2025/12/01, 2021/11/11, 2025/12/01, true, 125, 111, 100, 1, 'www.sephora.com' );
+  '2021-10-18', '2021-10-19', '2021-10-20', true, 125, 111, 100, 1, 'www.sephora.com' );
 
 
 INSERT INTO recent_transactions (
@@ -92,7 +92,8 @@ INSERT INTO sendMoney(
   send_amount,
   created_at
 )
-VALUES(1, 1, 1, 'Money from Mom', 50, 2021/11/22);
+
+VALUES(1, 1, 1, 'Money from Mom', 50, '2021-10-17');
 
 INSERT INTO parents(
   id,
@@ -118,4 +119,4 @@ INSERT INTO parents(
   updated_at
 )
 
-VALUES(1, 1, 1, 'Money from Mom', 50, 2021/11/22);
+VALUES(1, 1, 1, 'Money from Mom', 50, '2021-10-18');
