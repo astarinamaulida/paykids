@@ -8,7 +8,7 @@ INSERT INTO childAccount (
   account_cvv, 
   expiry_date)
 VALUES
-  (1, 1, 'Tina', 'Toaster', 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 125, 111, 2025/12/01)
+  (1, 1, 'Tina', 'Toaster', 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 125, 111, 2025/12/01);
 
 
 INSERT INTO children (
@@ -34,10 +34,11 @@ INSERT INTO children (
   background_color,
   header_color,
   created_at,
-  updated_at,
-);
+  updated_at
+)
 VALUES
-  (1, 'Tina', 'Toaster', 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 2025/12/01, 2021/11/11, 2025/12/01, true, 125, 111, 100, 1, "www.sephora.com",  )
+  (1, 'Tina', 'Toaster', 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 
+  2025/12/01, 2021/11/11, 2025/12/01, true, 125, 111, 100, 1, 'www.sephora.com' );
 
 
 INSERT INTO recent_transactions (
@@ -48,7 +49,7 @@ INSERT INTO recent_transactions (
   transaction_note,
   created_at,
 )
-VALUES(1, 1, 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 50, 'www.sephora.com', now )
+VALUES(1, 1, 'd0660a4d-9be5-4cb4-a3a1-4d1854bd26ae', 50, 'www.sephora.com', now );
 
 
 INSERT INTO requestMoney(
@@ -61,7 +62,7 @@ INSERT INTO requestMoney(
   decided,
   decision_updated_at,
 )
-VALUES(1, 1, 1, "www.amazon.com", 100, "www.sephora.com", now, false ,now )
+VALUES(1, 1, 1, "www.amazon.com", 100, "www.sephora.com", now, false ,now );
 
 INSERT INTO approveRequestMoney(
   id,
@@ -73,7 +74,7 @@ INSERT INTO approveRequestMoney(
   decided,
   decision_updated_at,
 )
-VALUES(1, 1, 1, 'www.amazon.com', 100, 'www.sephora.com', now, true ,now )
+VALUES(1, 1, 1, 'www.amazon.com', 100, 'www.sephora.com', now, true ,now );
 
 INSERT INTO accountSetting(
   child_id,
@@ -91,7 +92,7 @@ INSERT INTO sendMoney(
   send_amount,
   created_at
 )
-VALUES(1, 1, 1, 'Money from Mom', 50, 2021/11/22)
+VALUES(1, 1, 1, 'Money from Mom', 50, 2021/11/22);
 
 INSERT INTO parents(
   id,
@@ -117,4 +118,4 @@ INSERT INTO parents(
   updated_at,
 )
 
-VALUES(1, 1, 1, 'Money from Mom', 50, 2021/11/22)
+VALUES(1, 1, 1, 'Money from Mom', 50, 2021/11/22);
