@@ -95,7 +95,7 @@ INSERT INTO approveRequestMoney(
   decided,
   decision_updated_at
 )
-VALUES(1, 1, 1, 'www.amazon.com', 100, 'www.sephora.com', now, true ,now );
+VALUES(1, 1, 1, 'www.amazon.com', 100, now(), true ,now());
 
 INSERT INTO accountSetting(
   child_id,
@@ -140,4 +140,26 @@ INSERT INTO parents(
   updated_at
 )
 
-VALUES(1, 1, 1, 'Money from Mom', 50, '2021-10-18');
+VALUES(
+  1, 
+  'jane',
+  'toaster',
+  'ewallet account',
+  'ewallet passsword',
+  'bank account number',
+  true,
+  1,
+  'street name',
+  'street',
+  'city',
+  'postal_code',
+  'this is a number',
+  'this is email',
+  -- ARRAY ['{"store": "www.sephora.1"}'],
+  -- ARRAY ['{"store": "www.sephora.2"}'],
+  -- ARRAY ['{"store": "www.sephora.3"}'],
+  'text_color_blue',
+  'bg_color',
+  'header color',  
+  '2021-10-18'
+  );
