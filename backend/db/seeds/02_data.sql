@@ -149,7 +149,6 @@ VALUES(
   'bank account number',
   true,
   1,
-  'street name',
   'street',
   'city',
   'postal_code',
@@ -162,5 +161,6 @@ VALUES(
   'bg_color',
   'header color',  
   '2021-10-18',
-  '2021-10-18'
+  '2021-10-19'
   );
+  
