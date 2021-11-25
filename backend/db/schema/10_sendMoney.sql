@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS sendMoney CASCADE;
 
-
 CREATE TABLE sendMoney (
   "id" integer,
   "child_id" varchar,
