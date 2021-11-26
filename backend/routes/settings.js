@@ -3,7 +3,7 @@ const settings = express.Router();
 
 // Access all settings
 settings.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.json({});
 });
 
 module.exports = settings;

@@ -3,7 +3,7 @@ const children = express.Router();
 
 // Access all children
 children.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.json({});
 });
 
 module.exports = children;
