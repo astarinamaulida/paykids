@@ -29,6 +29,10 @@ children.get('/:child_id/permissions', function(req, res, next) {
   res.json({});
 });
 
+children.get('/:child_id/permissions/:permission_id', function(req, res, next) {
+  res.json({});
+});
+
 children.get('/:child_id/account_status', function(req, res, next) {
   res.json({});
 });
