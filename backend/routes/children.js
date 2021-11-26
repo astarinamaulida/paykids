@@ -1,7 +1,7 @@
 const express = require('express');
 const children = express.Router();
 
-/* GET home page. */
+// Access all children
 children.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
