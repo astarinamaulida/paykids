@@ -1,6 +1,6 @@
 LHL Final Project 
 
-Color Palette
+## Color
 logo_blue  #FFC107 #197BBD
 logo_white  #FFC107 #FFFFFF
 cc_main_design #197BBD #FAFAFA #FFC107 #FFFFFF #FFCCCC #9FE8ED
@@ -10,7 +10,7 @@ cc_design4 #FAFAFA #FFC107 #FFFFFF #FFCCCC #EC407A #F8BBD0
 cc_design5 #FAFAFA #FFC107 #FFFFFF #FFCCCC #8BC34A #9FE8ED 
 cc_design6 #FAFAFA #FFC107 #FFFFFF #FFCCCC #FF5722 #FFA726
 
-Images URL:
+## Images URL:
 logo_blue (https://i.ibb.co/vByHTtJ/logo-blue.png)
 logo_white (https://i.ibb.co/rdVfcqT/logo-white.png)
 
