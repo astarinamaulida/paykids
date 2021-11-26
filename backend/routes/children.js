@@ -21,4 +21,8 @@ children.get('/:child_id/transactions/:transaction_id', function(req, res, next)
   res.json({});
 });
 
+children.get('/children/:child_id/account_data/:account_id', function(req, res, next) {
+  res.json({});
+});
+
 module.exports = children;
