@@ -18,5 +18,14 @@ parents.get('/parents/:parents_id/children/:child_id', function(req, res, next) 
   res.json({});
 })
 
+parents.get('/parents/:parents_id/request_money/', function(req, res, next) {
+  res.json({});
+});
+
+
+parents.get('/parents/:parents_id/request_money/:child_id', function(req, res, next) {
+  res.json({});
+});
+
 
 module.exports = parents;
