@@ -12,7 +12,7 @@ export default function CreditCard(props) {
   const [expirationYear, setExpirationYear] = useState(22);
   const [CVV, setCVV] = useState(111);
 
-  const [sitePreferences, setsitePreferences] = useState({})
+  const [sitePreferences, setSitePreferences] = useState({})
   return (
     <></>
   )
