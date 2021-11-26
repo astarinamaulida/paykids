@@ -26,7 +26,10 @@ const requestsRouter = require('./routes/requests');
 
 
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use("/api/children", childrenRouter);
+app.use("/api/parents", parentsRouter);
+app.use("/api/transactions", transactionsRouter);
+app.use("/api/requests", requestsRouter);
+
 
 module.exports = app;
