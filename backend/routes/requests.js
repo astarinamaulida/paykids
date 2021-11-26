@@ -6,11 +6,11 @@ requests.get('/', function(req, res, next) {
   res.json({});
 });
 
-requests.get('/request_money', function(req, res, next) {
+requests.get('/request_money/:child_id', function(req, res, next) {
   res.json({});
 });
 
-requests.get('/request_money/:request_money_id', function(req, res, next) {
+requests.get('/request_money/:child_id/:request_money_id', function(req, res, next) {
   res.json({});
 });
 
