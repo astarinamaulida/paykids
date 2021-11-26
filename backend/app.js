@@ -23,6 +23,7 @@ const childrenRouter = require('./routes/children');
 const parentsRouter = require('./routes/parents');
 const transactionsRouter = require('./routes/transactions');
 const requestsRouter = require('./routes/requests');
+const settingsRouter = require('./routes/settings');
 
 
 
@@ -30,6 +31,8 @@ app.use("/api/children", childrenRouter);
 app.use("/api/parents", parentsRouter);
 app.use("/api/transactions", transactionsRouter);
 app.use("/api/requests", requestsRouter);
+app.use("/api/settings", settingsRouter);
+
 
 
 module.exports = app;
