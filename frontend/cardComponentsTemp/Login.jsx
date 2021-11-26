@@ -11,6 +11,30 @@ export default function Login(props) {
   };
 
   return (
+    <div>
+    <div className="row">
+    <div className="small-5 small-offset-1 columns ">
+      <div className="callout credit">
+        <div className="row">
+          <div className="small-6 columns">
+            <h1 className="credit__bank">Welcome to!</h1>
+          </div>
+        </div>
+      <div className="row">
+        <div className="column">
+          <p className="credit__card-number">{"E-Wallet for Kids!"}</p>
+        
+        </div>
+        <div className="small-9 columns">
+          
+        </div>
+        <div className="small-3 columns">
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
     <div className="login">
       <form onSubmit={onSubmit}>
         <p>
@@ -27,7 +51,7 @@ export default function Login(props) {
           <button type="submit" name="commit">Login</button>
         </p>
       </form>
-
     </div>
+  </div>
   );
 };
