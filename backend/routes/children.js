@@ -25,4 +25,13 @@ children.get('/children/:child_id/account_data/:account_id', function(req, res, 
   res.json({});
 });
 
+children.get('/:child_id/permissions', function(req, res, next) {
+  res.json({});
+});
+
+children.get('/:child_id/account_status', function(req, res, next) {
+  res.json({});
+});
+
+
 module.exports = children;
