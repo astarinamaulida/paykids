@@ -1,4 +1,4 @@
-import React from 'react'; //optional
+import React from 'react'; 
 import Button from 'muicss/lib/react/button';
 
 function Navigation(){
