@@ -6,14 +6,12 @@ function Navigation(){
 
   return (
     <nav>
-    <span className="nav-logo"></span>
-     <img className="nav__image" src={logo}/>
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css" />
+     <img className="nav__logo" src={logo}/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css" />
         <div>
           <Button primary className="Button">Logout</Button>
         </div>
-  </nav>
+    </nav>
   );
 }
 
