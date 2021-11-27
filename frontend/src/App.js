@@ -8,10 +8,10 @@ import ParentsApprovalList from './components/ParentsApprovaIList';
 function App() {
   return (
     <div className="App">
-      <h1>Transaction List</h1>
+      <h1>This is App</h1>
       {/* <ChildrensTransactionList /> */}
-      {/* <ChildrensRequestList /> */}
-      <ParentsApprovalList />
+      <ChildrensRequestList />
+      {/* <ParentsApprovalList /> */}
     </div>
   );
 }
