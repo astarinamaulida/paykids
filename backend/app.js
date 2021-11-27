@@ -30,6 +30,7 @@ app.use("/api/parents", parentsRouter);
 app.use("/api/settings", settingsRouter);
 app.use("/api/transactions", transactionsRouter);
 
+app.get("/api/autheticate");
 app.post("/api/parents/login");
 app.post("/api/parents/register");
 app.post("/api/childrens/login");
