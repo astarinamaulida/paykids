@@ -3,7 +3,7 @@ import Button from 'muicss/lib/react/button';
 
 import "/components/Button.scss"
 
-
+// Need to update with save data in state and onClick function after the route established
 class Button_Money extends React.Component {
   render() {
     return (

@@ -3,7 +3,7 @@ import Button from 'muicss/lib/react/button';
 
 import "/components/Button.scss"
 
-
+// Need to update with onClick after the route established
 class Button extends React.Component {
   render() {
     return (
