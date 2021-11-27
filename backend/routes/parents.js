@@ -28,7 +28,7 @@ parents.get('/parents/:parents_id/request_money/:child_id', function(req, res, n
 });
 
 
-// SendMoneyMoney {
+// SendMoney {
 //   id: number;
 //   child_id: string;
 //   parent_id: string
