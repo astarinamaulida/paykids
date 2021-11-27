@@ -74,6 +74,18 @@ children.get('/:child_id/permissions', function(req, res, next) {
   res.json({});
 });
 
+
+children.get('/:child_id/permissions/:permission_id', function(req, res, next) {
+  res.json({});
+});
+
+children.post('/:child_id/permissions/:permission_id', function(req, res, next) {
+
+  res.json({});
+});
+
+
+
 // currently only 1 permission
 // interface accountSetting {
 //   id: string;
@@ -81,35 +93,30 @@ children.get('/:child_id/permissions', function(req, res, next) {
 //   active: boolean;  
 //   updated_at: Date;
 // }
-
 const accountSettings = {
   id: 1,
   parent_id: 1,
   active: true
  }
-children.get('/:child_id/permissions/:permission_id', function(req, res, next) {
+
+children.get('/:child_id/account_status', function(req, res, next) {
   res.json({accountSettings});
 });
 
-children.post('/:child_id/permissions/:permission_id', function(req, res, next) {
-
-  // functions to make true/toggle
+children.post('/:child_id/account_status', function(req, res, next) {
+   // functions to make true/toggle
   // accountSettings = {
   //   id: 1,
   //   parent_id: 1,
   //   active: true
   //  }
 
-   accountSettings = {
+  accountSettings = {
     id: 1,
     parent_id: 1,
     active: false
    }
   res.json({accountSettings});
-});
-
-children.get('/:child_id/account_status', function(req, res, next) {
-  res.json({});
 });
 
 
