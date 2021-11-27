@@ -1,7 +1,7 @@
 export default function ChildrensTransactionListItem(props) {
   return (
     <div>
-      <h1>I am ChildrensTransactionListItem</h1>
+      <h3>I am ChildrensTransactionListItem</h3>
     </div>
   )
 }
