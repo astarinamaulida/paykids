@@ -54,21 +54,49 @@ children.get('/:child_id/transactions/:transaction_id', function(req, res, next)
   res.json({transaction});
 });
 
-
+// Use for dashboard with credit card view
+// data to be revised
 // /api/children/:child_id/:balance_id
 // interface childAccount {
-//   id: number;
-//   Child_id: string;
-//   first_name: string;
-//   last_name: string;
-//   Account_number: string;
-//   account_balance: number;
-//   Account_cvv: number;
-//   expiry_date: Date;
+  // id: number;
+  // Child_id: string; 
+  // first_name: string;
+  // last_name: string;
+  // Account_number: string;
+  // account_balance: number;
+  // Account_cvv: number;
+  // expiry_date: Date;
 // }
+const childAccountInfo = {
+  id: 1,
+  child_id: 1, // 
+  firstName: "Tina",
+  lastName: "Toaster",
+  accountNumber: '1',
+  accountBalance: 500,
+  accountCVV: 111,
+  expiry_month: 10,
+  expiry_day: 22
+}
 children.get('/children/:child_id/account_data/:account_id', function(req, res, next) {
-  res.json({});
+  res.json({childAccountInfo});
 });
+
+children.post('/children/:child_id/account_data/:account_id/change_security', function(req, res, next) {
+  childAccountInfo = {
+    id: 1,
+    child_id: 1, // 
+    firstName: "Tina",
+    lastName: "Toaster",
+    accountNumber: '1',
+    accountBalance: 500,
+    accountCVV: 111,
+    expiry_month: 11,
+    expiry_day: 24
+  }
+  res.json({childAccountInfo});
+});
+
 
 children.get('/:child_id/permissions', function(req, res, next) {
   res.json({});
