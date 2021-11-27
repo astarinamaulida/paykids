@@ -82,7 +82,7 @@ children.get('/children/:child_id/account_data/:account_id', function(req, res, 
   res.json({childAccountInfo});
 });
 
-children.post('/children/:child_id/account_data/:account_id/change_security', function(req, res, next) {
+children.post('/children/:child_id/account_data/:account_id/change_status', function(req, res, next) {
   childAccountInfo = {
     id: 1,
     child_id: 1, // 
