@@ -1,7 +1,7 @@
-export default function Home (props) {
+export default function ChildrensTransactionList(props) {
   return (
     <div>
-      <h1>I am Home</h1>
+      <h1>I am ChildrensTransactionList</h1>
     </div>
   )
 }
