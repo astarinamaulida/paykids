@@ -13,8 +13,25 @@ children.get('/:child_id/balance', function(req, res, next) {
   res.json({});
 });
 
+
+// recentTransactions {
+//   id: number;
+//   child_id: string;
+//   account_number: string;
+//   transaction_amount: number;
+//   transaction_note: string;
+//   transaction_date: Date;  // when created it needs a date now
+// }
+
 children.get('/:child_id/transactions', function(req, res, next) {
-  res.json({});
+
+  const transactions = [
+    { id: 1 , child_id: 1, account_number: 1, transaction_amount: 50, transaction_note: 'Saphora'},
+    { id: 2 , child_id: 2, account_number: 2, transaction_amount: 52, transaction_note: 'Game'},
+    { id: 3 , child_id: 3, account_number: 3, transaction_amount: 53, transaction_note: 'Saphora'}
+  ];
+
+  res.json({transactions});
 });
 
 children.get('/:child_id/transactions/:transaction_id', function(req, res, next) {
