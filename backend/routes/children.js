@@ -131,16 +131,34 @@ children.get('/:child_id/permissions/:permission_id/update', function(req, res, 
   res.json({});
 });
 
+// interface designSettings {
+//   text_color: string;
+//   card_color: string;
+//   background_color: string;
+//   header_color: string;
+// }
 
-
+let designSettings = {
+  text_color: "text_for_blue_design",
+  card_color: "http_address_for_blue_background",
+  background_color: "background_color_for_blue_design",
+  header_color: "header_color_for_blue_design"
+}
 children.get('/:child_id/design_settings', function(req, res, next) {
-  res.json({});
+  console.log("http://localhost:3001/api/children//:child_id/design_settings");
+  res.json(designSettings);
 });
 
 // children.post('/:child_id/setting/update', function(req, res, next) {
-children.get('/:child_id/design_settings/update', function(req, res, next) {
-
-  res.json({});
+children.get('/:child_id/design_settings/update/:color', function(req, res, next) {
+  // create logic function based on color provided
+  designSettings = {
+    text_color: "text_for_green_design",
+    card_color: "http_address_for_green_background",
+    background_color: "background_color_for_green_design",
+    header_color: "header_color_for_green_design"
+  }
+  res.json(designSettings);
 });
 
 
