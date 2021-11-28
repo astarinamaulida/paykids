@@ -145,12 +145,13 @@ let designSettings = {
   header_color: "header_color_for_blue_design"
 }
 children.get('/:child_id/design_settings', function(req, res, next) {
-  console.log("http://localhost:3001/api/children//:child_id/design_settings");
+  console.log("http://localhost:3001/api/children/:child_id/design_settings");
   res.json(designSettings);
 });
 
 // children.post('/:child_id/setting/update', function(req, res, next) {
 children.get('/:child_id/design_settings/update/:color', function(req, res, next) {
+  console.log("http://localhost:3001/api/children/:child_id/design_settings/update/:color");
   // create logic function based on color provided
   designSettings = {
     text_color: "text_for_green_design",
@@ -162,17 +163,20 @@ children.get('/:child_id/design_settings/update/:color', function(req, res, next
 });
 
 
-
-
 children.get('/:child_id/card_background/', function(req, res, next) {
-  res.json({});
+  console.log("http://localhost:3001/api/children/:child_id/card_background/");
+  // designSettings.background_color;
+  res.json(designSettings.background_color);
 });
 
 
 // children.post('/:child_id/card_background/update', function(req, res, next) {
-children.get('/:child_id/card_background/update', function(req, res, next) {
-
-  res.json({});
+children.get('/:child_id/card_background/update/:color', function(req, res, next) {
+  console.log("http://localhost:3001/api/children/:child_id/card_background/update/:color");
+  // designSettings.background_color;
+  // hardcode color change
+  designSettings.background_color = "green"
+  res.json(designSettings.background_color);
 });
 
 
