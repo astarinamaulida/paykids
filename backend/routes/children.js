@@ -322,6 +322,7 @@ children.get('/:child_id/request_money/request_id', function(req, res, next) {
 //   request_note: string;
 // };
 
+// children.post('/:child_id/request_money/new/request', function(req, res, next) {
 children.get('/:child_id/request_money/new/request', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/request_money/new/request");
  
