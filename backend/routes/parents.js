@@ -34,17 +34,6 @@ let childrensList = [
   }
 ];
 
-// interface parentsListItem{ 
-//   id: number; 
-//   child_id: number;       // uuid string in production 
-//   first_name: string; 
-//   last_name: string;  
-//   account_number: number; // uuid string in production 
-//   account_balance: number;
-//   active: boolean;
-//   childrensList: array; 
-// }
-
 
 let parentsList = [
   { 
@@ -65,13 +54,54 @@ parents.get('/', function(req, res, next) {
   res.json({});
 });
 
+
+// interface parentsListItem{ 
+//   id: number; 
+//   child_id: number;       // uuid string in production 
+//   first_name: string; 
+//   last_name: string;  
+//   account_number: number; // uuid string in production 
+//   account_balance: number;
+//   active: boolean;
+//   childrensList: array; 
+// }
+
+
 parents.get('/:parents_id', function(req, res, next) {
-  res.json({});
+
+  // const parent = parentsList[parents_id]
+  res.json(parentsList[0]);
 });
 
+// interface parentsListItem{ 
+//   id: number; 
+//   child_id: number;       // uuid string in production 
+//   first_name: string; 
+//   last_name: string;  
+//   account_number: number; // uuid string in production 
+//   account_balance: number;
+//   active: boolean;
+//   childrensList: array; 
+// }
+
+
 parents.get('/:parents_id/children/', function(req, res, next) {
+
+
   res.json({});
 })
+
+// interface parentsListItem{ 
+//   id: number; 
+//   child_id: number;       // uuid string in production 
+//   first_name: string; 
+//   last_name: string;  
+//   account_number: number; // uuid string in production 
+//   account_balance: number;
+//   active: boolean;
+//   childrensList: array; 
+// }
+
 
 parents.get('/:parents_id/children/:child_id', function(req, res, next) {
   res.json({});
