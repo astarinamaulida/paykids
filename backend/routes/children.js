@@ -242,7 +242,7 @@ children.get('/:child_id/card_background/update/:color', function(req, res, next
     id: 1,
     background_color: color,
   }
-  res.json(designSettings.background_color);
+  res.json(designBackgroundSettings);
 });
 
 
