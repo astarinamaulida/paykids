@@ -45,14 +45,15 @@ children.get('/:child_id/transactions', function(req, res, next) {
 });
 
 children.get('/:child_id/transactions/:transaction_id', function(req, res, next) {
-
+  console.log("http://localhost:3001/api/children/:child_id/transactions/:transaction_id")
   const transactions = [
     { id: 1 , child_id: 1, account_number: 1, transaction_amount: 50, transaction_note: 'Saphora'},
     { id: 2 , child_id: 2, account_number: 2, transaction_amount: 52, transaction_note: 'Game'},
     { id: 3 , child_id: 3, account_number: 3, transaction_amount: 53, transaction_note: 'Saphora'}
   ];
-  const transaction = transactions[transaction_id];
-  res.json({transaction});
+    // const transaction = transactions[transaction_id];
+    const transaction = transactions[0];
+  res.json(transaction);
 });
 
 // Use for dashboard with credit card view
