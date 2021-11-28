@@ -82,8 +82,8 @@ children.get('/:child_id/transactions', function(req, res, next) {
 children.get('/:child_id/transactions/:transaction_id', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/transactions/:transaction_id");
 
-    // const transaction = transactions[transaction_id];
-    // const transaction = transactions[0];
+    // const transaction = transactionsList[transaction_id];
+    // const transaction = transactionsList[0];
   res.json(transactionsList[0]);
 });
 
