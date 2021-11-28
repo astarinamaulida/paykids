@@ -14,6 +14,8 @@ let childAccountInfo = {
   expiry_day: 22
 }
 
+
+
 let transactionsList = [
   { id: 1 , child_id: 1, account_number: 1, transaction_amount: 50, transaction_note: 'Saphora'},
   { id: 2 , child_id: 1, account_number: 1, transaction_amount: 52, transaction_note: 'Game'},
@@ -47,12 +49,16 @@ children.get('/:child_id', function(req, res, next) {
 // }
 children.get('/:child_id/balance', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/balance");
-  childBalance = {
-    "id" : childAccountInfo.id,
-    "first name" : childAccountInfo.firstName,
-    "balance": childAccountInfo.accountBalance
+
+  let childAccountBalance = {
+    id: 1,
+    child_id: 1, 
+    firstName: "Tina",
+    lastName: "Toaster",
+    accountNumber: '1',
+    accountBalance: 500
   }
-  res.json(childBalance);
+  res.json(childAccountBalance);
 });
 
 
