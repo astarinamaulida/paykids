@@ -68,7 +68,7 @@ parents.get('/', function(req, res, next) {
 
 
 parents.get('/:parents_id', function(req, res, next) {
-
+  console.log("http://localhost:3001/api/parents/:parents_id");
   // const parent = parentsList[parents_id]
   res.json(parentsList[0]);
 });
@@ -86,7 +86,7 @@ parents.get('/:parents_id', function(req, res, next) {
 
 
 parents.get('/:parents_id/children/', function(req, res, next) {
-
+  console.log("http://localhost:3001/api/parents/:parents_id/children");
   // const parentsChildren = parentsList[parents_id].childrensList
   res.json(parentsList[0].childrensList);
 })
@@ -104,7 +104,7 @@ parents.get('/:parents_id/children/', function(req, res, next) {
 
 
 parents.get('/:parents_id/children/:child_id', function(req, res, next) {
-
+  console.log("http://localhost:3001/api/parents/:parents_id/children/:child_id");
   // const parentsChild = parentsList[parents_id].childrensList[child_id]
   res.json(parentsList[0].childrensList[0]);
 })
