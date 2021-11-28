@@ -2,7 +2,7 @@ const express = require('express');
 const parents = express.Router();
 
 
-// interface childAccount {
+// interface childAccountList {
   // id: number;
   // child_id: string; 
   // first_name: string;
@@ -33,6 +33,18 @@ let childrensList = [
     active: true
   }
 ];
+
+// interface parentsListItem{ 
+//   id: number; 
+//   child_id: number;       // uuid string in production 
+//   first_name: string; 
+//   last_name: string;  
+//   account_number: number; // uuid string in production 
+//   account_balance: number;
+//   active: boolean;
+//   childrensList: array; 
+// }
+
 
 let parentsList = [
   { 
@@ -67,7 +79,7 @@ parents.get('/:parents_id/children/:child_id', function(req, res, next) {
 
 
 
-// interface childAccount {
+// interface childAccountList {
   // id: number;
   // child_id: string; 
   // first_name: string;
@@ -82,7 +94,7 @@ parents.get('/:parents_id/children/', function(req, res, next) {
 });
 
 
-// interface childAccount {
+// interface childAccountList {
   // id: number;
   // child_id: string; 
   // first_name: string;
