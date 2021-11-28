@@ -2,9 +2,49 @@ const express = require('express');
 const parents = express.Router();
 
 
-let childrenList = [
-  { id: 1 , child_id: 1, account_number: 1, request_amount: 5,  request_note: 'lunch money'},
-  { id: 2 , child_id: 2, account_number: 1, request_amount: 15, request_note: 'hair thing'}
+// interface childAccount {
+  // id: number;
+  // child_id: string; 
+  // first_name: string;
+  // last_name: string;
+  // account_number: string;
+  // account_balance: number;
+// }
+
+let childrensList = [
+  { 
+    id: 1 , 
+    child_id: 1, 
+    parent_id: 1,
+    first_name: "Tina", 
+    last_name: "Toaster",  
+    account_number: 1, 
+    account_balance: 500,
+    active: true
+  },
+  { 
+    id: 2 , 
+    child_id: 2,
+    parent_id: 1, 
+    first_name: "Bob", 
+    last_name: "Toaster",  
+    account_number: 2, 
+    account_balance: 200,
+    active: true
+  }
+];
+
+let parentsList = [
+  { 
+    id: 1 , 
+    child_id: 1, 
+    first_name: "Jane", 
+    last_name: "Toaster",  
+    account_number: 1, 
+    account_balance: 500,
+    active: true,
+    childrensList: childrensList 
+  }
 ];
 
 
@@ -29,32 +69,32 @@ parents.get('/:parents_id/children/:child_id', function(req, res, next) {
 
 // interface childAccount {
   // id: number;
-  // Child_id: string; 
+  // child_id: string; 
   // first_name: string;
   // last_name: string;
-  // Account_number: string;
+  // account_number: string;
   // account_balance: number;
 // }
 
 parents.get('/:parents_id/children/', function(req, res, next) {
   console.log("http://localhost:3001/api/parents/:parents_id/children/:child_id");
-  res.json(childrenList);
+  res.json(childrensList);
 });
 
 
 // interface childAccount {
   // id: number;
-  // Child_id: string; 
+  // child_id: string; 
   // first_name: string;
   // last_name: string;
-  // Account_number: string;
+  // account_number: string;
   // account_balance: number;
 // }
 
 parents.get('/:parents_id/children/:child_id', function(req, res, next) {
   console.log("http://localhost:3001/api/parents/:parents_id/children/:child_id");
 
-  res.json(childrenList[0]);
+  res.json(childrensList[0]);
 });
 
 
