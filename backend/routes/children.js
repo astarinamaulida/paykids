@@ -94,6 +94,7 @@ children.get('/:child_id/account_data/:account_id', function(req, res, next) {
   res.json(childAccountInfo);
 });
 
+
 // to be made post for postgres
 children.get('/:child_id/account_data/:account_id/update_info', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/account_data/:account_id/update_info");
@@ -163,9 +164,10 @@ children.get('/:child_id/design_settings/update/:color', function(req, res, next
 });
 
 
-children.get('/:child_id/card_background/', function(req, res, next) {
-  console.log("http://localhost:3001/api/children/:child_id/card_background/");
+children.get('/:child_id/card_background', function(req, res, next) {
+  console.log("http://localhost:3001/api/children/:child_id/card_background");
   // designSettings.background_color;
+
   res.json(designSettings.background_color);
 });
 
