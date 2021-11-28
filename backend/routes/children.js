@@ -3,7 +3,8 @@ const children = express.Router();
 
 // Access all children
 children.get('/', function(req, res, next) {
-  res.json({});
+  console.log("http://localhost:3001/api/children")
+  res.json("http://localhost:3001/api/children");
 });
 
 
@@ -33,14 +34,14 @@ children.get('/:child_id/balance', function(req, res, next) {
 // }
 
 children.get('/:child_id/transactions', function(req, res, next) {
-
+  console.log("http://localhost:3001/api/children/:child_id/transactions")
   const transactions = [
     { id: 1 , child_id: 1, account_number: 1, transaction_amount: 50, transaction_note: 'Saphora'},
     { id: 2 , child_id: 2, account_number: 2, transaction_amount: 52, transaction_note: 'Game'},
     { id: 3 , child_id: 3, account_number: 3, transaction_amount: 53, transaction_note: 'Saphora'}
   ];
 
-  res.json({transactions});
+  res.json(transactions);
 });
 
 children.get('/:child_id/transactions/:transaction_id', function(req, res, next) {
