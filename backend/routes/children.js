@@ -277,4 +277,19 @@ children.get('/:child_id/account_status/update', function(req, res, next) {
 });
 
 
+children.get('/:child_id/request_money/', function(req, res, next) {
+  res.json({});
+});
+
+
+
+children.get('/:child_id/request_money/request_id', function(req, res, next) {
+  res.json({});
+});
+
+
+
+
+
+
 module.exports = children;
