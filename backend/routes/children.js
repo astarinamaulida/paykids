@@ -96,15 +96,16 @@ children.get('/:child_id/account_data/:account_id', function(req, res, next) {
 
 
 // to be made post for postgres
+// update the follow
+// accountCVV: 222,
+// expiry_month: 11,
+// expiry_day: 24
 children.get('/:child_id/account_data/:account_id/update_info', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/account_data/:account_id/update_info");
-    // update the follow
-    // accountCVV: 222,
-    // expiry_month: 11,
-    // expiry_day: 24
+    
   childAccountInfo = {
     id: 1,
-    child_id: 1, // 
+    child_id: 1,
     firstName: "Tina",
     lastName: "Toaster",
     accountNumber: '1',
