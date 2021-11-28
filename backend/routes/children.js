@@ -125,7 +125,19 @@ children.get('/:child_id/permissions/:permission_id', function(req, res, next) {
   res.json({});
 });
 
-children.post('/:child_id/permissions/:permission_id/update', function(req, res, next) {
+// children.post('/:child_id/permissions/:permission_id/update', function(req, res, next) {
+children.get('/:child_id/permissions/:permission_id/update', function(req, res, next) {
+
+  res.json({});
+});
+
+
+children.get('/:child_id/settings/', function(req, res, next) {
+  res.json({});
+});
+
+// children.post('/:child_id/setting/update', function(req, res, next) {
+children.get('/:child_id/setting/update', function(req, res, next) {
 
   res.json({});
 });
