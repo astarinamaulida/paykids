@@ -87,8 +87,8 @@ parents.get('/:parents_id', function(req, res, next) {
 
 parents.get('/:parents_id/children/', function(req, res, next) {
 
-
-  res.json({});
+  // const parentsChildren = parentsList[parents_id].childrensList
+  res.json(parentsList[0].childrensList);
 })
 
 // interface parentsListItem{ 
@@ -104,7 +104,9 @@ parents.get('/:parents_id/children/', function(req, res, next) {
 
 
 parents.get('/:parents_id/children/:child_id', function(req, res, next) {
-  res.json({});
+
+  // const parentsChild = parentsList[parents_id].childrensList[child_id]
+  res.json(parentsList[0].childrensList[0]);
 })
 
 
