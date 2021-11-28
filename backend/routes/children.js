@@ -99,7 +99,7 @@ children.get('/:child_id/transactions/new/transaction', function(req, res, next)
   res.json(transactions);
 });
 
-// /api/children/:child_id/:balance_id
+
 // interface childAccount {
   // id: number;
   // Child_id: string; 
@@ -117,11 +117,16 @@ children.get('/:child_id/account_data/:account_id', function(req, res, next) {
 });
 
 
-// to be made post for postgres
-// update the follow
-// accountCVV: 222,
-// expiry_month: 11,
-// expiry_day: 24
+// interface childAccount {
+  // id: number;
+  // Child_id: string; 
+  // first_name: string;
+  // last_name: string;
+  // Account_number: string;
+  // account_balance: number;
+  // Account_cvv: number;
+  // expiry_date: Date;
+// }
 children.get('/:child_id/account_data/:account_id/update_info', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/account_data/:account_id/update_info");
     
@@ -156,7 +161,6 @@ children.get('/:child_id/permissions/:permission_id/update', function(req, res, 
 });
 
 
-
 // interface designSettings {
 //   id: number;
 //   text_color: string;
@@ -185,6 +189,7 @@ children.get('/:child_id/design_settings', function(req, res, next) {
 //   background_color: string;
 //   header_color: string;
 // }
+
 // children.post('/:child_id/setting/update', function(req, res, next) {
 children.get('/:child_id/design_settings/update/:color', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/design_settings/update/:color");
@@ -198,6 +203,8 @@ children.get('/:child_id/design_settings/update/:color', function(req, res, next
   }
   res.json(designSettings);
 });
+
+
 
 // interface designBackgroundSettings {
 //   id: number;
@@ -249,12 +256,14 @@ children.get('/:child_id/account_status', function(req, res, next) {
   res.json(accountSettings);
 });
 
+
+
 // interface accountSetting {
 //   id: string;
 //   active: boolean;  
 //   updated_at: Date;
 // }
-// to be made post for postgress setup
+
 // children.post('/:child_id/account_status/update', function(req, res, next) {
 children.get('/:child_id/account_status/update', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/account_status/update");
