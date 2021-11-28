@@ -22,13 +22,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 const childrenRouter = require('./routes/children');
 const parentsRouter = require('./routes/parents');
 const settingsRouter = require('./routes/settings');
-const transactionsRouter = require('./routes/requests');
+const requestsRouter = require('./routes/requests');
 
 
 app.use("/api/children", childrenRouter);
 app.use("/api/parents", parentsRouter);
 app.use("/api/settings", settingsRouter);
-app.use("/api/transactions", transactionsRouter);
+app.use("/api/requests", requestsRouter);
 
 app.get("/api/autheticate");
 app.post("/api/parents/login");
