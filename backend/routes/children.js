@@ -1,9 +1,22 @@
 const express = require('express');
 const children = express.Router();
 
+
+let childAccountInfo = {
+  id: 1,
+  child_id: 1, 
+  firstName: "Tina",
+  lastName: "Toaster",
+  accountNumber: '1',
+  accountBalance: 500,
+  accountCVV: 111,
+  expiry_month: 10,
+  expiry_day: 22
+}
+
 // Access all children
 children.get('/', function(req, res, next) {
-  console.log("http://localhost:3001/api/children")
+  console.log("http://localhost:3001/api/children");
   res.json("http://localhost:3001/api/children");
 });
 
@@ -16,11 +29,17 @@ children.get('/:child_id', function(req, res, next) {
 
 // interface child_balance {
 //   id: number;
+//   firstName: string;
 //   account_balance: number;
 // }
 children.get('/:child_id/balance', function(req, res, next) {
-
-  res.json({});
+  console.log("http://localhost:3001/api/children/:child_id/balance");
+  childBalance = {
+    "id" : childAccountInfo.id,
+    "first name" : childAccountInfo.firstName,
+    "balance": childAccountInfo.accountBalance
+  }
+  res.json(childBalance);
 });
 
 
@@ -34,7 +53,7 @@ children.get('/:child_id/balance', function(req, res, next) {
 // }
 
 children.get('/:child_id/transactions', function(req, res, next) {
-  console.log("http://localhost:3001/api/children/:child_id/transactions")
+  console.log("http://localhost:3001/api/children/:child_id/transactions");
   const transactions = [
     { id: 1 , child_id: 1, account_number: 1, transaction_amount: 50, transaction_note: 'Saphora'},
     { id: 2 , child_id: 2, account_number: 2, transaction_amount: 52, transaction_note: 'Game'},
@@ -45,7 +64,7 @@ children.get('/:child_id/transactions', function(req, res, next) {
 });
 
 children.get('/:child_id/transactions/:transaction_id', function(req, res, next) {
-  console.log("http://localhost:3001/api/children/:child_id/transactions/:transaction_id")
+  console.log("http://localhost:3001/api/children/:child_id/transactions/:transaction_id");
   const transactions = [
     { id: 1 , child_id: 1, account_number: 1, transaction_amount: 50, transaction_note: 'Saphora'},
     { id: 2 , child_id: 2, account_number: 2, transaction_amount: 52, transaction_note: 'Game'},
@@ -69,23 +88,18 @@ children.get('/:child_id/transactions/:transaction_id', function(req, res, next)
   // Account_cvv: number;
   // expiry_date: Date;
 // }
-const childAccountInfo = {
-  id: 1,
-  child_id: 1, // 
-  firstName: "Tina",
-  lastName: "Toaster",
-  accountNumber: '1',
-  accountBalance: 500,
-  accountCVV: 111,
-  expiry_month: 10,
-  expiry_day: 22
-}
+
 children.get('/:child_id/account_data/:account_id', function(req, res, next) {
-  console.log("http://localhost:3001/api/children//:child_id/account_data/:account_id")
+  console.log("http://localhost:3001/api/children//:child_id/account_data/:account_id");
   res.json(childAccountInfo);
 });
 
-children.post('/children/:child_id/account_data/:account_id/change_status', function(req, res, next) {
+children.get('/:child_id/account_data/:account_id/update_info', function(req, res, next) {
+  console.log("http://localhost:3001/api/children/:child_id/account_data/:account_id/update_info");
+    // update the follow
+    // accountCVV: 222,
+    // expiry_month: 11,
+    // expiry_day: 24
   childAccountInfo = {
     id: 1,
     child_id: 1, // 
@@ -93,11 +107,11 @@ children.post('/children/:child_id/account_data/:account_id/change_status', func
     lastName: "Toaster",
     accountNumber: '1',
     accountBalance: 500,
-    accountCVV: 111,
-    expiry_month: 11,
-    expiry_day: 24
+    accountCVV: 222,   // add random from 111 to 999 generator
+    expiry_month: 11,  // add random from 1 to 12 generator
+    expiry_day: 24     // add random from 1 to 30 generator
   }
-  res.json({childAccountInfo});
+  res.json(childAccountInfo);
 });
 
 
