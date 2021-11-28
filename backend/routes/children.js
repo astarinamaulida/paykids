@@ -80,8 +80,9 @@ const childAccountInfo = {
   expiry_month: 10,
   expiry_day: 22
 }
-children.get('/children/:child_id/account_data/:account_id', function(req, res, next) {
-  res.json({childAccountInfo});
+children.get('/:child_id/account_data/:account_id', function(req, res, next) {
+  console.log("http://localhost:3001/api/children//:child_id/account_data/:account_id")
+  res.json(childAccountInfo);
 });
 
 children.post('/children/:child_id/account_data/:account_id/change_status', function(req, res, next) {
