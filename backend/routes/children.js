@@ -179,7 +179,7 @@ children.get('/:child_id/design_settings/update/:color', function(req, res, next
 // }
 let designBackgroundSettings = {
     id: 1,
-    background_color: "http://",
+    background_color: "http://background_color_for_main_design",
 }
 children.get('/:child_id/card_background', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/card_background");
