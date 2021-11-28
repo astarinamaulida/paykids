@@ -132,12 +132,27 @@ children.get('/:child_id/permissions/:permission_id/update', function(req, res, 
 });
 
 
-children.get('/:child_id/settings/', function(req, res, next) {
+
+children.get('/:child_id/design_settings', function(req, res, next) {
   res.json({});
 });
 
 // children.post('/:child_id/setting/update', function(req, res, next) {
-children.get('/:child_id/setting/update', function(req, res, next) {
+children.get('/:child_id/design_settings/update', function(req, res, next) {
+
+  res.json({});
+});
+
+
+
+
+children.get('/:child_id/card_background/', function(req, res, next) {
+  res.json({});
+});
+
+
+// children.post('/:child_id/card_background/update', function(req, res, next) {
+children.get('/:child_id/card_background/update', function(req, res, next) {
 
   res.json({});
 });
