@@ -63,12 +63,21 @@ children.get('/:child_id/transactions', function(req, res, next) {
   res.json(transactions);
 });
 
+
+// interface recentTransactions {
+//   id: number;
+//   child_id: string;
+//   account_number: string;
+//   transaction_amount: number;
+//   transaction_note: string;
+//   transaction_date: Date;  // when created it needs a date now
+// }
 children.get('/:child_id/transactions/:transaction_id', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/transactions/:transaction_id");
 
     // const transaction = transactions[transaction_id];
-    const transaction = transactions[0];
-  res.json(transaction);
+    // const transaction = transactions[0];
+  res.json(transactions[0]);
 });
 
 
@@ -81,19 +90,13 @@ children.get('/:child_id/transactions/:transaction_id', function(req, res, next)
 //   transaction_date: Date;  // when created it needs a date now
 // }
 // children.post('/:child_id/transactions/new_transaction', function(req, res, next) {
-children.get('/:child_id/transactions/new_transaction', function(req, res, next) {
-  console.log("http://localhost:3001/api/children/:child_id/transactions/new_transaction");
+children.get('/:child_id/transactions/new/transaction', function(req, res, next) {
+  console.log("http://localhost:3001/api/children//:child_id/transactions/new/transaction");
 
- 
-
-  let newTransaction = 50;
-  let transactionList = [100,-50, 50];
-  newTransactionList = [...transactionList, newTransaction ];
-  newTransactionList = [100,-50, 50, 50];
-
-  // const transaction = transactions[transaction_id];
-   
-  res.json(transaction);
+  const newTransaction = { id: 1 , child_id: 1, account_number: 1, transaction_amount: 15, transaction_note: "McD"};
+  const updatedTransactionList = [... transactions, newTransaction ];
+  transactions = [... updatedTransactionList ]
+  res.json(transactions);
 });
 
 // /api/children/:child_id/:balance_id
@@ -151,6 +154,8 @@ children.get('/:child_id/permissions/:permission_id/update', function(req, res, 
 
   res.json({});
 });
+
+
 
 // interface designSettings {
 //   id: number;
