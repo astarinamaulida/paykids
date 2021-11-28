@@ -75,8 +75,6 @@ children.get('/:child_id/transactions/:transaction_id', function(req, res, next)
   res.json(transaction);
 });
 
-// Use for dashboard with credit card view
-// data to be revised
 // /api/children/:child_id/:balance_id
 // interface childAccount {
   // id: number;
