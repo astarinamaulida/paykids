@@ -188,13 +188,11 @@ children.get('/:child_id/card_background/update/:color', function(req, res, next
 // currently only 1 permission
 // interface accountSetting {
 //   id: string;
-//   parent_id string;
 //   active: boolean;  
 //   updated_at: Date;
 // }
 let accountSettings = {
   id: 1,
-  parent_id: 1,
   active: true
  }
 
@@ -203,14 +201,19 @@ children.get('/:child_id/account_status', function(req, res, next) {
   res.json(accountSettings);
 });
 
+// interface accountSetting {
+//   id: string;
+//   active: boolean;  
+//   updated_at: Date;
+// }
 // to be made post for postgress setup
+// children.post('/:child_id/account_status/update', function(req, res, next) {
 children.get('/:child_id/account_status/update', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/account_status/update");
    // functions to make true/toggle
 
   accountSettings = {
     id: 1,
-    parent_id: 1,
     active: false
    }
   res.json(accountSettings);
