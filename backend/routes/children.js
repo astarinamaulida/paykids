@@ -134,6 +134,7 @@ children.get('/:child_id/permissions/:permission_id/update', function(req, res, 
 });
 
 // interface designSettings {
+//   id: number;
 //   text_color: string;
 //   card_color: string;
 //   background_color: string;
