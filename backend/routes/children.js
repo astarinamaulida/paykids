@@ -94,6 +94,7 @@ children.get('/:child_id/account_data/:account_id', function(req, res, next) {
   res.json(childAccountInfo);
 });
 
+// to be made post for postgres
 children.get('/:child_id/account_data/:account_id/update_info', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/account_data/:account_id/update_info");
     // update the follow
@@ -124,7 +125,7 @@ children.get('/:child_id/permissions/:permission_id', function(req, res, next) {
   res.json({});
 });
 
-children.post('/:child_id/permissions/:permission_id', function(req, res, next) {
+children.post('/:child_id/permissions/:permission_id/update', function(req, res, next) {
 
   res.json({});
 });
@@ -138,30 +139,28 @@ children.post('/:child_id/permissions/:permission_id', function(req, res, next) 
 //   active: boolean;  
 //   updated_at: Date;
 // }
-const accountSettings = {
+let accountSettings = {
   id: 1,
   parent_id: 1,
   active: true
  }
 
 children.get('/:child_id/account_status', function(req, res, next) {
-  res.json({accountSettings});
+  console.log("http://localhost:3001/api/children/:child_id/account_status");
+  res.json(accountSettings);
 });
 
-children.post('/:child_id/account_status', function(req, res, next) {
+// to be made post for postgress setup
+children.get('/:child_id/account_status/update', function(req, res, next) {
+  console.log("http://localhost:3001/api/children/:child_id/account_status/update");
    // functions to make true/toggle
-  // accountSettings = {
-  //   id: 1,
-  //   parent_id: 1,
-  //   active: true
-  //  }
 
   accountSettings = {
     id: 1,
     parent_id: 1,
     active: false
    }
-  res.json({accountSettings});
+  res.json(accountSettings);
 });
 
 
