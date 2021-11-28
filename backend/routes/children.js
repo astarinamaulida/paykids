@@ -16,9 +16,16 @@ let childAccountInfo = {
 
 let transactions = [
   { id: 1 , child_id: 1, account_number: 1, transaction_amount: 50, transaction_note: 'Saphora'},
-  { id: 2 , child_id: 2, account_number: 2, transaction_amount: 52, transaction_note: 'Game'},
-  { id: 3 , child_id: 3, account_number: 3, transaction_amount: 53, transaction_note: 'Saphora'}
+  { id: 2 , child_id: 1, account_number: 1, transaction_amount: 52, transaction_note: 'Game'},
+  { id: 3 , child_id: 1, account_number: 1, transaction_amount: 53, transaction_note: 'Saphora'}
 ];
+
+let requestsList = [
+  { id: 1 , child_id: 1, account_number: 1, request_amount: 5,  request_note: 'lunch money'},
+  { id: 2 , child_id: 1, account_number: 1, request_amount: 15, request_note: 'hair thing'},
+  { id: 3 , child_id: 1, account_number: 1, request_amount: 30, request_note: 'Saphora'}
+];
+
 
 // Access all children
 children.get('/', function(req, res, next) {
@@ -277,16 +284,58 @@ children.get('/:child_id/account_status/update', function(req, res, next) {
 });
 
 
-children.get('/:child_id/request_money/', function(req, res, next) {
-  res.json({});
+
+// interface newRequestItem = { 
+//   id: number; 
+//   account_number: number; // uuid string in production 
+//   request_amount: number; 
+//   request_note: string;
+// };
+
+children.get('/:child_id/request_money', function(req, res, next) {
+  console.log("http://localhost:3001/api/children/:child_id/request_money");
+  res.json(requestsList);
 });
 
 
+// interface newRequestItem = { 
+//   id: number; 
+//   account_number: number; // uuid string in production 
+//   request_amount: number; 
+//   request_note: string;
+// };
 
 children.get('/:child_id/request_money/request_id', function(req, res, next) {
-  res.json({});
+  console.log("http://localhost:3001/api/children/:child_id/request_money/request_id");
+
+    // const request = requests[request_id];
+    // const request = requests[0];
+  res.json(requestsList[0]);
 });
 
+
+
+// interface newRequestItem = { 
+//   id: number; 
+//   account_number: number; // uuid string in production 
+//   request_amount: number; 
+//   request_note: string;
+// };
+
+children.get('/:child_id/request_money/new/request', function(req, res, next) {
+  console.log("http://localhost:3001/api/children/:child_id/request_money/new/request");
+ 
+  const newRequestItem = { 
+    id: 1, 
+    account_number: 1, 
+    request_amount: 100, 
+    request_note: "b-day gift"
+  };
+
+  const updatedRequestList = [... requestsList, newRequestItem ];
+  requestsList = [... updatedRequestList]
+  res.json(requestsList);
+});
 
 
 
