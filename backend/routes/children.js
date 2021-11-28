@@ -14,7 +14,7 @@ let childAccountInfo = {
   expiry_day: 22
 }
 
-let transactions = [
+let transactionsList = [
   { id: 1 , child_id: 1, account_number: 1, transaction_amount: 50, transaction_note: 'Saphora'},
   { id: 2 , child_id: 1, account_number: 1, transaction_amount: 52, transaction_note: 'Game'},
   { id: 3 , child_id: 1, account_number: 1, transaction_amount: 53, transaction_note: 'Saphora'}
@@ -67,7 +67,7 @@ children.get('/:child_id/balance', function(req, res, next) {
 
 children.get('/:child_id/transactions', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/transactions");
-  res.json(transactions);
+  res.json(transactionsList);
 });
 
 
@@ -84,7 +84,7 @@ children.get('/:child_id/transactions/:transaction_id', function(req, res, next)
 
     // const transaction = transactions[transaction_id];
     // const transaction = transactions[0];
-  res.json(transactions[0]);
+  res.json(transactionsList[0]);
 });
 
 
@@ -100,10 +100,10 @@ children.get('/:child_id/transactions/:transaction_id', function(req, res, next)
 children.get('/:child_id/transactions/new/transaction', function(req, res, next) {
   console.log("http://localhost:3001/api/children//:child_id/transactions/new/transaction");
 
-  const newTransaction = { id: 1 , child_id: 1, account_number: 1, transaction_amount: 15, transaction_note: "McD"};
-  const updatedTransactionList = [... transactions, newTransaction ];
-  transactions = [... updatedTransactionList ]
-  res.json(transactions);
+  const newTransaction = { id: 4 , child_id: 1, account_number: 1, transaction_amount: 15, transaction_note: "McD"};
+  const updatedTransactionsList = [... transactionsList, newTransaction ];
+  transactionsList = [... updatedTransactionsList ]
+  res.json(transactionsList);
 });
 
 
@@ -327,7 +327,7 @@ children.get('/:child_id/request_money/new/request', function(req, res, next) {
   console.log("http://localhost:3001/api/children/:child_id/request_money/new/request");
  
   const newRequestItem = { 
-    id: 1, 
+    id: 4, 
     account_number: 1, 
     request_amount: 100, 
     request_note: "b-day gift"
