@@ -17,9 +17,10 @@ function App() {
     <div className="App">
       <NavBar />
       <h1>This is App</h1>
+      {/* <ParentsSendMoneyForm /> */}
       <ChildrensVisualSettings />
-      {/* <ChildrensRequestList />
-      <ParentsApprovalList />
+      {/* <ChildrensRequestList /> */}
+      {/* <ParentsApprovalList />
       <ParentsChildrenList />
       <ParentsDashboard />
       <ChildrensDashboard /> */}

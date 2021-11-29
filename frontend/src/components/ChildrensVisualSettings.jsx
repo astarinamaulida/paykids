@@ -34,16 +34,22 @@ export default function ChildrensVisualSettings(props) {
 
   return (
     <main className="container">
+      <div className="select-card">
+        <div className="gallery-item">
+          <img className="cc-main-design-top" src={cardBackground} />
+        </div>
+      </div> 
+      
       <div className="frame-card-selection">
       <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css"
         />
-          <div class="gallery-item">
+          {/* <div class="gallery-item">
             <img className="cc-main-design" src={cardBackground} />
-          </div>
+          </div> */}
           <div class="gallery-item">
-            <img onClick={ccMainDesign} className="cc-main-design" src={CC_DESIGN_MAIN} />
+            <img onClick={ccMainDesign} className="cc-design1" src={CC_DESIGN_MAIN} />
           </div>
           <div class="gallery-item">
             <img onClick={ccDesignTwo}  className="cc-design2" src={CC_DESIGN_2} />
@@ -63,7 +69,6 @@ export default function ChildrensVisualSettings(props) {
           <div>
           <Button className="button-select">Select Card</Button>
         </div>
-        
       </div>
     </main>
   );
