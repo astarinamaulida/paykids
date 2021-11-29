@@ -32,7 +32,6 @@ export default function CreditCard(props) {
   }
 
   
-
   return (
     <div>
       <div className="row">
@@ -40,17 +39,17 @@ export default function CreditCard(props) {
           <div className="callout credit">
             <div className="row">
               <div className="column">
-                <p className="credit__card-number">{cardNum}</p>
-                <span className="credit__ccv">{numCCV}</span>
+                <p className="credit__card-number">{cardNumber}</p>
+                <span className="credit__ccv">{CVV}</span>
               </div>
               <div className="small-9 columns">
                 <label>Card Holder
-                  <p className="credit__name">{fname}</p>
+                  <p className="credit__name">{firstName}</p>
                 </label>
               </div>
               <div className="small-3 columns">
                 <label>Expires
-                  <p className="credit__date">{expMonth} / {expYear}</p>
+                  <p className="credit__date">{expirationMonth} / {expirationYear}</p>
                 </label>
               </div>
             </div>
