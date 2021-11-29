@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import ParentsChildrenListItem from './components/ParentsChildrenListItem';
 import ParentsChildrenList from './components/ParentsChidlrenList';
 import ParentsDashboard from './components/ParentsDashboard';
+import ChildrensDashboard from './components/ChildrensDashboard';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
       {/* <ChildrensRequestList /> */}
       {/* <ParentsApprovalList /> */}
        {/* <ParentsChildrenList /> */}
-       <ParentsDashboard />
+       {/* <ParentsDashboard /> */}
+       <ChildrensDashboard />
     </div>
   );
 }
