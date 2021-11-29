@@ -40,17 +40,17 @@ export default function CreditCard(props) {
           <div className="callout credit">
             <div className="row">
               <div className="column">
-                <p className="credit__card-number">{this.state.number}</p>
-                <span className="credit__ccv">{this.state.ccv}</span>
+                <p className="credit__card-number">{cardNum}</p>
+                <span className="credit__ccv">{numCCV}</span>
               </div>
               <div className="small-9 columns">
                 <label>Card Holder
-                  <p className="credit__name">{this.state.name}</p>
+                  <p className="credit__name">{fname}</p>
                 </label>
               </div>
               <div className="small-3 columns">
                 <label>Expires
-                  <p className="credit__date">{this.state.month} / {this.state.day}</p>
+                  <p className="credit__date">{expMonth} / {expYear}</p>
                 </label>
               </div>
             </div>
