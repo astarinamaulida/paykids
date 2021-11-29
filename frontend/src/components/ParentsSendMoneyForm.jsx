@@ -4,23 +4,28 @@ export default function ParentsSendMoneyForm(props) {
   const [sendMoney, setSendMoney] = useState(0);
 
   const five = function() {
-    setSendMoney(sendMoney = 5)
+    setSendMoney(5)
   }
   const ten = function() {
-    setSendMoney(sendMoney = 10)
+    setSendMoney(10)
   }
   const fifteen = function() {
-    setSendMoney(sendMoney = 15)
+    setSendMoney(15)
   }
   const twenty = function() {
-    setSendMoney(sendMoney = 20)
+    setSendMoney(20)
   }
   const fifty = function() {
-    setSendMoney(sendMoney = 50)
+    setSendMoney(50)
   }
   const hundred = function() {
-    setSendMoney(sendMoney = 100)
+    setSendMoney(100)
   }
+  const clear = function() {
+    setSendMoney(0)
+  }
+
+  
   
 
 
