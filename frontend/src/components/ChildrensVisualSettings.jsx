@@ -35,6 +35,17 @@ export default function ChildrensVisualSettings(props) {
   return (
     <div>
       <h1>I am ChildrensVisualSettings</h1>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css" />
+        <div>
+          <Button onClick={ccDesignTwo} className="Button">White</Button>
+          <Button onClick={ccDesignThree} className="Button">Pink</Button>
+          <Button onClick={ccDesignFour} className="Button">Red</Button>
+          <Button onClick={ccDesignFive} className="Button">green</Button>
+          <Button onClick={ccDesignSix} className="Button">Orange</Button>
+          <Button onClick={ccMainDesign} className="Button">Default</Button>
+        </div>
+        {/* this is a form need event prvent default */}
+        <Button className="Button">Cofirm</Button>
     </div>
   )
 }
