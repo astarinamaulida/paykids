@@ -1,7 +1,7 @@
 import ParentsChildrenListItem from "./ParentsChildrenListItem";
 
 export default function ParentsChildrenList(props) {
-  let childrensList = [
+  const childrensList = [
     { 
       id: 1 , 
       child_id: 1, 
@@ -25,7 +25,7 @@ export default function ParentsChildrenList(props) {
   ];
   
   
-  let parentsList = [
+  const parentsList = [
     { 
       id: 1 , 
       child_id: 1, 
@@ -39,16 +39,15 @@ export default function ParentsChildrenList(props) {
   ]
 
 
-  // const parsedTransactions = Array.isArray(transactionsList) && 
-  //   transactionsList.map(transaction => (
-  //     <ParentsChildrenListItem   {...transaction} key={transaction.id} />));
-  
+  const parsedChildren = Array.isArray(childrensList) && 
+  childrensList.map(child => (
+      <ParentsChildrenListItem   {...child} key={child} />));
+
   return (
     <div>
       <h1>I am ParentsChildrenlList</h1>
       <section> 
-       <ParentsChildrenListItem />
-       <ParentsChildrenListItem />
+       {parsedChildren}
       </section>
     </div>
   )
