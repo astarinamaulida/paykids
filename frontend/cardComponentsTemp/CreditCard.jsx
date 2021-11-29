@@ -58,24 +58,24 @@ export default function CreditCard(props) {
         <div className="small-5 columns end">
           <div className="callout margin-top50">
             <label>Name
-              <input type="text" onChange={this.nameChange.bind(this)}/>
+              <input type="text" onChange={fname}/>
             </label>
             <label>Credit Card Number
-              <input type="text" maxLength="16" onChange={this.numberChange.bind(this)}/>
+              <input type="text" maxLength="16" onChange={cardNum}/>
             </label>
             <div className="row">
               <label className="column">Expiry  Date (MM YY)</label>
               <div className="small-4 columns">
-                <input type="text" maxLength="2" onChange={this.monthChange.bind(this)} />
+                <input type="text" maxLength="2" onChange={expMonth} />
               </div>
               <div className="small-4 columns end">
-                <input type="text" maxLength="2" onChange={this.dayChange.bind(this)}/>
+                <input type="text" maxLength="2" onChange={expYear}/>
               </div>
             </div>
             <div className="row">
               <div className="small-4 column">
                 <label>CCV
-                  <input type="text" maxLength="3" onChange={this.ccvChange.bind(this)} />
+                  <input type="text" maxLength="3" onChange={numCCV} />
                 </label>
               </div>
             </div>
