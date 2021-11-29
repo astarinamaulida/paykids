@@ -8,7 +8,7 @@ export default function CreditCard(props) {
     child_id: 1, 
     firstName: "Tina",
     lastName: "Toaster",
-    accountNumber: '1234 1234 1234 1234',
+    accountNumber: 1,
     virtualDebitNumber: '1234 1234 1234 1234',
     accountBalance: 500,
     accountCVV: 111,
