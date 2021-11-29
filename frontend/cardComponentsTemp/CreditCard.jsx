@@ -3,16 +3,36 @@ import React, { useState } from 'react';
 
 export default function CreditCard(props) {
  
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [bank, setBank] = useState('');
-  const [creditCardCompany, setCreditCardCompany] = useState('')
-  const [cardNumber, setCardNumber] = useState('');
+  const [firstName, setFirstName] = useState('Tina');
+  const [lastName, setLastName] = useState('Toaster');
+  const [cardNumber, setCardNumber] = useState('1234 5678 9012 abcd');
   const [expirationMonth, setExpirationMonth] = useState(10);
   const [expirationYear, setExpirationYear] = useState(22);
   const [CVV, setCVV] = useState(111);
 
-  const [sitePreferences, setSitePreferences] = useState({})
+  const fname = function() {
+    setFirstName();
+  }
+  const lname = function() {
+    setLastName();
+  }
+  const cardNum = function() {
+    setCardNumber();
+  }
+  const expMonth = function() {
+    setExpirationMonth();
+  }
+  const expYear = function() {
+    setExpirationYear();
+  }
+  setExpirationYear();
+  
+  const numCCV = function() {
+    setCVV();
+  }
+
+  
+
   return (
     <div>
       <div className="row">
