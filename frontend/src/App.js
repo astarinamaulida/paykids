@@ -8,6 +8,8 @@ import ParentsChildrenListItem from './components/ParentsChildrenListItem';
 import ParentsChildrenList from './components/ParentsChidlrenList';
 import ParentsDashboard from './components/ParentsDashboard';
 import ChildrensDashboard from './components/ChildrensDashboard';
+import ParentsSendMoneyForm from './components/ParentsSendMoneyForm';
+import ChildrensVisualSettings from './components/ChildrensVisualSettings';
 
 
 function App() {
@@ -15,12 +17,12 @@ function App() {
     <div className="App">
       <NavBar />
       <h1>This is App</h1>
-      <ChildrensTransactionList />
-      <ChildrensRequestList />
-      {/* <ParentsApprovalList /> */}
+      <ChildrensVisualSettings />
+      {/* <ChildrensRequestList />
+      <ParentsApprovalList />
       <ParentsChildrenList />
       <ParentsDashboard />
-      <ChildrensDashboard />
+      <ChildrensDashboard /> */}
     </div>
   );
 }
