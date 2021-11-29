@@ -3,6 +3,17 @@ import React, { useState } from 'react';
 
 export default function CreditCard(props) {
  
+  const childAccountInfo = {
+    id: 1,
+    child_id: 1, 
+    firstName: "Tina",
+    lastName: "Toaster",
+    accountNumber: '1',
+    accountBalance: 500,
+    accountCVV: 111,
+    expiry_month: 10,
+    expiry_day: 22
+  }
   const [firstName, setFirstName] = useState('Tina');
   const [lastName, setLastName] = useState('Toaster');
   const [cardNumber, setCardNumber] = useState('1234 5678 9012 abcd');
@@ -25,7 +36,6 @@ export default function CreditCard(props) {
   const expYear = function() {
     setExpirationYear();
   }
-  setExpirationYear();
   
   const numCCV = function() {
     setCVV();

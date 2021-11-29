@@ -8,9 +8,9 @@ export default function ChildrensDashboard (props) {
     <div>
       <h1>I am ChildrensDashboard</h1>
     </div>
-    {/* <div>
+    <div>
       <CreditCard />
-    </div> */}
+    </div>
     <div>
       <ChildrensTransactionList />
     </div>
