@@ -8,18 +8,19 @@ export default function CreditCard(props) {
     child_id: 1, 
     firstName: "Tina",
     lastName: "Toaster",
-    accountNumber: '1',
+    accountNumber: '1234 5678 9012 abcd',
+    virtualDebitNumber: '1234 5678 9012 abcd',
     accountBalance: 500,
     accountCVV: 111,
-    expiry_month: 10,
-    expiry_day: 22
+    expiryMonth: 10,
+    expiryYear: 22
   }
-  const [firstName, setFirstName] = useState('Tina');
-  const [lastName, setLastName] = useState('Toaster');
-  const [cardNumber, setCardNumber] = useState('1234 5678 9012 abcd');
-  const [expirationMonth, setExpirationMonth] = useState(10);
-  const [expirationYear, setExpirationYear] = useState(22);
-  const [CVV, setCVV] = useState(111);
+  const [firstName, setFirstName] = useState(childAccountInfo.firstName);
+  const [lastName, setLastName] = useState(childAccountInfo.lastName);
+  const [cardNumber, setCardNumber] = useState(childAccountInfo.virtualDebitNumber);
+  const [expirationMonth, setExpirationMonth] = useState(childAccountInfo.expiryMonth);
+  const [expirationYear, setExpirationYear] = useState(childAccountInfo.expiryYear);
+  const [CVV, setCVV] = useState(childAccountInfo.accountCVV);
 
   const fname = function() {
     setFirstName();
