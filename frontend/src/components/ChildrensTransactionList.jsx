@@ -15,14 +15,7 @@ export default function ChildrensTransactionList(props) {
     <div>
       <h1>I am ChildrensTransactionList</h1>
       <section>
-        <ChildrensTransactionListItem />
-        <ChildrensTransactionListItem />
-        <ChildrensTransactionListItem />
-        <ChildrensTransactionListItem />
-        <ChildrensTransactionListItem />
-        <ChildrensTransactionListItem />
-        <ChildrensTransactionListItem />
-        <ChildrensTransactionListItem />
+       {parsedTransactions}
       </section>
     </div>
   )
