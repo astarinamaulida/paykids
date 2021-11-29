@@ -14,7 +14,7 @@ export default function ChildrensRequestList(props) {
     
   return (
     <div>
-      <h1>I am ChildrensRequestList</h1>
+      <h3>Approve Request List</h3>
       <section>
        {parsedRequests }
       </section>
