@@ -8,7 +8,7 @@ let childAccountInfo = {
   firstName: "Tina",
   lastName: "Toaster",
   accountNumber: 1,
-  virtualDebitNumber: '1234 5678 9012 abcd',
+  virtualDebitNumber: '1234 1234 1234 1234',
   accountBalance: 500,
   accountCVV: 111,
   expiryMonth: 10,
@@ -136,6 +136,7 @@ children.get('/:child_id/account_data/:account_id', function(req, res, next) {
   // first_name: string;
   // last_name: string;
   // Account_number: string;
+  // virtualDebitNumber: number,
   // account_balance: number;
   // Account_cvv: number;
   // expiry_date: Date;
@@ -149,7 +150,7 @@ children.get('/:child_id/account_data/:account_id/update_info', function(req, re
     firstName: "Tina",
     lastName: "Toaster",
     accountNumber: 1,
-    virtualDebitNumber: '1234 5678 9012 abcd',
+    virtualDebitNumber: '1234 1234 1234 1234',
     accountBalance: 500,
     accountBalance: 500,
     accountCVV: 222,   // add random from 111 to 999 generator
