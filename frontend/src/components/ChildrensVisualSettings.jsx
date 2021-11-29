@@ -12,22 +12,22 @@ export default function ChildrensVisualSettings(props) {
   const CC_DESIGN_MAIN = "";
 
   const ccDesignTwo = function() {
-    setCardBackground(CC_DESIGN_2)
+    setCardBackground(CC_DESIGN_2);
   }
   const ccDesignThree = function() {
-    setCardBackground(CC_DESIGN_3)
+    setCardBackground(CC_DESIGN_3);
   }
   const ccDesignFour = function() {
-    setCardBackground(CC_DESIGN_4)
+    setCardBackground(CC_DESIGN_4);
   }
   const ccDesignFive = function() {
-    setCardBackground(CC_DESIGN_5)
+    setCardBackground(CC_DESIGN_5);
   }
   const ccDesignSix = function() {
-    setCardBackground(CC_DESIGN_6 )
+    setCardBackground(CC_DESIGN_6);
   }
   const ccMainDesign = function() {
-    setCardBackground(CC_DESIGN_MAIN)
+    setCardBackground(CC_DESIGN_MAIN);
   }
  
   
