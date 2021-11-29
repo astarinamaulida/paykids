@@ -1,7 +1,7 @@
-export default function ParentsApprovalListItem(props) {
+export default function ParentsChildrenListItem(props) {
   return (
     <div>
-      <h1>I am ParentsApprovalListItem</h1>
+      <h1>I am ParentsChildrenListItem</h1>
     </div>
   )
 }

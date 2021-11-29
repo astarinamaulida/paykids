@@ -1,17 +1,13 @@
-import ParentsApprovalListItem from "./ParentsApprovaIListItem";
+import ParentsChildrenListItem from "./ParentsChildrenListItem";
 
-export default function ParentsApprovalList(props) {
+export default function ParentsChildrenList(props) {
   return (
     <div>
-      <h1>I am ParentsApprovalList</h1>
-      <section>
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        </section>
+      <h1>I am ParentsChildrenlList</h1>
+      <section> 
+       <ParentsChildrenListItem />
+       <ParentsChildrenListItem />
+      </section>
     </div>
   )
 }
