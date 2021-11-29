@@ -11,16 +11,6 @@ export default function ParentsChildrenList(props) {
       account_number: 1, 
       account_balance: 500,
       active: true
-    },
-    { 
-      id: 2 , 
-      child_id: 2,
-      parent_id: 1, 
-      first_name: "Bob", 
-      last_name: "Toaster",  
-      account_number: 2, 
-      account_balance: 200,
-      active: true
     }
   ];
   
