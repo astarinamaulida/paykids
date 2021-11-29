@@ -1,3 +1,4 @@
+import ChildrensRequestList from "./ChildrensRequestList";
 import ParentsChildrenListItem from "./ParentsChildrenListItem";
 
 export default function ParentsChildrenList(props) {
@@ -31,11 +32,14 @@ export default function ParentsChildrenList(props) {
 
   const parsedChildren = Array.isArray(childrensList) && 
   childrensList.map(child => (
-      <ParentsChildrenListItem   {...child} key={child} />));
+      <ParentsChildrenListItem   {...child} key={child.id} />));
 
   return (
     <div>
-      <h1>I am ParentsChildrenlList</h1>
+      <section>
+        <ChildrensRequestList />
+      </section>
+      <h3>name of the parsed Childrens section</h3>
       <section> 
        {parsedChildren}
       </section>
