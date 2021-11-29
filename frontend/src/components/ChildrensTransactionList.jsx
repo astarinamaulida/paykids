@@ -4,6 +4,7 @@ export default function ChildrensTransactionList(props) {
   return (
     <div>
       <h1>I am ChildrensTransactionList</h1>
+      <section>
         <ChildrensTransactionListItem />
         <ChildrensTransactionListItem />
         <ChildrensTransactionListItem />
@@ -12,7 +13,7 @@ export default function ChildrensTransactionList(props) {
         <ChildrensTransactionListItem />
         <ChildrensTransactionListItem />
         <ChildrensTransactionListItem />
-       
+      </section>
     </div>
   )
 }
