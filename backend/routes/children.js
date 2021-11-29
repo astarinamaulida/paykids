@@ -7,13 +7,13 @@ let childAccountInfo = {
   child_id: 1, 
   firstName: "Tina",
   lastName: "Toaster",
-  accountNumber: '1',
+  accountNumber: 1,
+  virtualDebitNumber: '1234 5678 9012 abcd',
   accountBalance: 500,
   accountCVV: 111,
-  expiry_month: 10,
-  expiry_day: 22
+  expiryMonth: 10,
+  expiryYear: 22
 }
-
 
 
 let transactionsList = [
@@ -145,10 +145,12 @@ children.get('/:child_id/account_data/:account_id/update_info', function(req, re
     
   childAccountInfo = {
     id: 1,
-    child_id: 1,
+    child_id: 1, 
     firstName: "Tina",
     lastName: "Toaster",
-    accountNumber: '1',
+    accountNumber: 1,
+    virtualDebitNumber: '1234 5678 9012 abcd',
+    accountBalance: 500,
     accountBalance: 500,
     accountCVV: 222,   // add random from 111 to 999 generator
     expiry_month: 11,  // add random from 1 to 12 generator
