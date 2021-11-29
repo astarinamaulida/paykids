@@ -177,3 +177,91 @@ p {
 	margin-bottom: 100px;
 	left: 0;
 }
+
+
+/*//////////////////Pick Card Designs////////////////////*/
+
+.cc-main-design {
+	width: 320px;
+	height: 206px;
+	border-radius: 20px;
+	margin: 20px;
+	box-shadow: 0 10px 10px #ccc;
+	border-radius: 5%;
+}
+
+.cc-design2 {
+	width: 320px;
+	height: 206px;
+	border-radius: 20px;
+	margin: 20px;
+	box-shadow: 0 10px 10px #ccc;
+	border-radius: 5%;
+}
+
+.cc-design3 {
+	width: 320px;
+	height: 206px;
+	border-radius: 20px;
+	margin: 20px;
+	box-shadow: 0 10px 10px #ccc;
+	border-radius: 5%;
+}
+
+.cc-design4 {
+	width: 320px;
+	height: 206px;
+	border-radius: 20px;
+	margin: 20px;
+	box-shadow: 0 10px 10px #ccc;
+	border-radius: 5%;
+}
+
+.cc-design5 {
+	width: 320px;
+	height: 206px;
+	border-radius: 20px;
+	margin: 20px;
+	box-shadow: 0 10px 10px #ccc;
+	border-radius: 5%;
+}
+
+.cc-design6 {
+	width: 320px;
+	height: 206px;
+	border-radius: 20px;
+	margin: 20px;
+	box-shadow: 0 10px 10px #ccc;
+	border-radius: 5%;
+}
+
+.frame-card-selection{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	align-content: flex-start;
+	height: 700px;
+	width: 1100px;
+	font-family: 'Quicksand', sans-serif;
+	flex-direction: row;
+	justify-content: center;
+	left: 450px;
+	margin-top: 200px;
+	position: absolute;
+	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+	border-radius: 28px;
+}
+
+.mui-btn.button-select {
+	color: white;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	height: 50px;
+	margin-top: 20px;
+	border-radius: 20px;
+	font-family: 'Quicksand', sans-serif;
+	box-shadow: 0 10px 10px #ccc;
+}
