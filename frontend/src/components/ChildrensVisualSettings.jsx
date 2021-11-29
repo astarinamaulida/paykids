@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { Button } from '@mui/material';
+import { useState } from "react";
+import { Button } from "@mui/material";
 // import Button from 'muicss/lib/react/button';
 
 export default function ChildrensVisualSettings(props) {
@@ -12,44 +12,71 @@ export default function ChildrensVisualSettings(props) {
   const CC_DESIGN_6 = "https://i.ibb.co/16G1vHQ/cc-design6.png";
   const CC_DESIGN_MAIN = "https://i.ibb.co/bRxw8RD/kids-1.png";
 
-  const ccDesignTwo = function() {
+  const ccDesignTwo = function () {
     setCardBackground(CC_DESIGN_2);
-  }
-  const ccDesignThree = function() {
+  };
+  const ccDesignThree = function () {
     setCardBackground(CC_DESIGN_3);
-  }
-  const ccDesignFour = function() {
+  };
+  const ccDesignFour = function () {
     setCardBackground(CC_DESIGN_4);
-  }
-  const ccDesignFive = function() {
+  };
+  const ccDesignFive = function () {
     setCardBackground(CC_DESIGN_5);
-  }
-  const ccDesignSix = function() {
+  };
+  const ccDesignSix = function () {
     setCardBackground(CC_DESIGN_6);
-  }
-  const ccMainDesign = function() {
+  };
+  const ccMainDesign = function () {
     setCardBackground(CC_DESIGN_MAIN);
-  }
- 
-  
-  
+  };
+
   return (
     <div className="container">
       <div className="frame-card-selection">
-      <h1>I am ChildrensVisualSettings</h1>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css" />
-        <Button onClick={ccMainDesign} className="cc-main-design">Default</Button>
+        <h1>I am ChildrensVisualSettings</h1>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css"
+        />
+        <Button onClick={ccMainDesign} className="cc-main-design">
+          Default
+        </Button>
         <div class="gallery-item">
-          <Button onClick={ccDesignTwo} className="cc-design2">White</Button>
-          <Button onClick={ccDesignThree} className="cc-design3">Pink</Button>
-          <Button onClick={ccDesignFour} className="cc-design4">Red</Button>
-          <Button onClick={ccDesignFive} className="cc-design5">green</Button>
-          <Button onClick={ccDesignSix} className="cc-design6">Orange</Button>
-          <Button onClick={ccMainDesign} className="cc-main-design">Default</Button>
+          <Button onClick={ccDesignTwo} className="cc-design2">
+            White
+          </Button>
+        </div>
+        <div class="gallery-item">
+          <Button onClick={ccDesignThree} className="cc-design3">
+            Pink
+          </Button>
+        </div>
+        <div class="gallery-item">
+          <Button onClick={ccDesignFour} className="cc-design4">
+            Red
+          </Button>
+        </div>
+        <div class="gallery-item">
+          <Button onClick={ccDesignFive} className="cc-design5">
+            green
+          </Button>
+        </div>
+        <div class="gallery-item">
+          <Button onClick={ccDesignSix} className="cc-design6">
+            Orange
+          </Button>
+        </div>
+        <div class="gallery-item">
+          <Button onClick={ccMainDesign} className="cc-main-design">
+            Default
+          </Button>
         </div>
         {/* this is a form need event prvent default */}
-        <Button className="Button">Cofirm</Button>
+        <div>
+        <Button className="button-select">Confirm</Button>
         </div>
+      </div>
     </div>
-  )
+  );
 }
