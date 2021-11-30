@@ -4,6 +4,7 @@ import ParentsSendMoneyForm from "./ParentsSendMoneyForm";
 export default function ParentsDashboard(props) {
   return (
     <main className="container">
+        <p className="heading">Parent Dashboard: Tina </p>
       <div>
         <div>
           <ParentsSendMoneyForm />

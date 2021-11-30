@@ -25,8 +25,8 @@ function App() {
       {/* <ChildrensRequestList /> */}
       {/* <ParentsApprovalList /> */}
       {/* <ParentsChildrenList /> */}
-      {/* <ParentsDashboard /> */}
-      <ChildrensDashboard />
+      <ParentsDashboard />
+      {/* <ChildrensDashboard /> */}
 
     </div>
   );
