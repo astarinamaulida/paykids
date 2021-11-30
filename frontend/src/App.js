@@ -22,10 +22,10 @@ function App() {
       {/* <Login /> */}
       {/* <CreditCard /> */}
       {/* <ChildrensVisualSettings /> */}
-      {/* <ChildrensRequestList /> */}
+      <ChildrensRequestList />
       {/* <ParentsApprovalList /> */}
       {/* <ParentsChildrenList /> */}
-      <ParentsDashboard />
+      {/* <ParentsDashboard /> */}
       {/* <ChildrensDashboard /> */}
 
     </div>
