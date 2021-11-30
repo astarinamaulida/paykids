@@ -1,18 +1,22 @@
 import ChildrensTransactionList from "./ChildrensTransactionList";
 import ParentsSendMoneyForm from "./ParentsSendMoneyForm";
 
-export default function ParentsDashboard (props) {
+export default function ParentsDashboard(props) {
   return (
-    <div>
+    <main className="container">
       <div>
-        <h1>I am ParentsDashboard</h1>
+        <div>
+          <ParentsSendMoneyForm />
+        </div>
+        <article className="frame-recent-parents">
+          <span>
+            <p>Recent Transactions</p>
+          </span>
+          <div>
+            <ChildrensTransactionList />
+          </div>
+        </article>
       </div>
-      <div>
-        <ParentsSendMoneyForm />
-      </div>
-      <div>
-        <ChildrensTransactionList />
-      </div>
-    </div>
-  )
+    </main>
+  );
 }

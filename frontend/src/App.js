@@ -21,13 +21,12 @@ function App() {
       {/* <ParentsSendMoneyForm /> */}
       {/* <Login /> */}
       {/* <CreditCard /> */}
-      {/* <ChildrensVisualSettings /> */}
+      <ChildrensVisualSettings />
       {/* <ChildrensRequestList /> */}
-      {/* <ParentsApprovalList />
-      <ParentsChildrenList />
-      <ParentsDashboard />*/}
-      <ChildrensDashboard />
-      {/* <ChildrensTransactionList /> */}
+      {/* <ParentsApprovalList /> */}
+      {/* <ParentsChildrenList /> */}
+      {/* <ParentsDashboard /> */}
+      {/* <ChildrensDashboard /> */}
 
     </div>
   );

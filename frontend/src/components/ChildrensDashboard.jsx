@@ -6,24 +6,24 @@ export default function ChildrensDashboard(props) {
   return (
     <main className="container">
       <article className="frame-credit-card">
-      <div className="text">
+        <div className="text">
           <p>Credit Card Information</p>
         </div>
-          <div>
+        <div>
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css"
           />
-            <CreditCard />
+          <CreditCard />
+        </div>
+        <article className="frame-recent">
+          <span>
+            <p>Recent Transactions</p>
+          </span>
+          <div>
+            <ChildrensTransactionList />
           </div>
-          <article className="frame-recent">
-            <span>
-              <p>Recent Transactions</p>
-            </span>
-            <div>
-              <ChildrensTransactionList />
-            </div>
-          </article>
+        </article>
       </article>
     </main>
   );

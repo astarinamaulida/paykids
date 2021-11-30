@@ -13,13 +13,13 @@ h3 {
 .App {
   text-align: center;
   background-color:rgb(255, 255, 255);
-  max-width: 1960px;
+  max-width: 1760px;
   width: 100%;
   position: absolute;
   flex-direction: column;
   display: flex;
   top: 50px;
-  left: 100px;
+  left: 220px;
   border: 1px solid white;
   box-shadow: 0px 24px 32px 
   rgba(0, 0, 0, 0.04), 
@@ -69,7 +69,7 @@ h3 {
 nav {
 	position: fixed;
 	top: 50;
-	left: 150px;
+	left: 230px;
 	z-index: 999;
 	width: 100%;
 	height: 120px;
@@ -91,7 +91,7 @@ nav {
 	width: 150px;
 	height: 50px;
 	position: absolute;
-	right: 350px;
+	right: 550px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -101,14 +101,13 @@ nav {
 	box-shadow: 0 10px 10px #ccc;
 }
 
-/*///////////   SEND MONEY   ///////////*/
+/*////////   PARENT'S DASHBOARD   ///////*/
 
 /* button for Sending Money */
 .mui-btn.button-money {
 	color: #197BBD;
 	background-color: rgb(236, 235, 235);
 	font-size: 28px;
-	margin-left: 30px;
 	height: 70px;
 	border-radius: 30px;
 	cursor: pointer;
@@ -128,7 +127,7 @@ nav {
 	cursor: pointer;
 	width: 28%;
 	text-align: center;
-	padding-right: 65px;
+	padding-right: 80px;
 }
 
 /* Frame box for sending money*/
@@ -146,7 +145,7 @@ nav {
 	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 	border-radius: 28px;
   top:500px;
-  left:650px
+  left:530px
 }
 
 /* Confirm & Cancel Button */
@@ -192,6 +191,22 @@ p {
 	left: 0;
 }
 
+.frame-recent-parents {
+	display: flex;
+	padding: 10px;
+	height: 620px;
+	width: 700px;
+	font-family: 'Quicksand', sans-serif;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 50px;
+  left:530px;
+	position: absolute;
+	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+	border-radius: 28px;
+  top:1050px;
+}
 
 /*//////////////////Pick Card Designs////////////////////*/
 
@@ -271,7 +286,7 @@ p {
   max-width: 66%;
 }
 
-.frame-card-selection{
+.frame-parents{
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
@@ -281,14 +296,32 @@ p {
 	font-family: 'Quicksand', sans-serif;
 	flex-direction: row;
 	justify-content: center;
-	left: 450px;
-	margin-top: 300px;
+	left: 330px;
+	margin-top: 700px;
 	position: absolute;
 	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
 	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 	border-radius: 28px;
   gap: 1px;
+}
 
+.frame-card-selection{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	align-content: flex-start;
+	height: 630px;
+	width: 1100px;
+	font-family: 'Quicksand', sans-serif;
+	flex-direction: row;
+	justify-content: center;
+	left: 330px;
+	margin-top: 700px;
+	position: absolute;
+	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+	border-radius: 28px;
+  gap: 1px;
 }
 
 .mui-btn.button-select {
@@ -305,14 +338,15 @@ p {
 }
 
 .cc-main-design-top {
-  width: 320px;
-	height: 206px;
+  width: 429px;
+	height: 268px;
 	border-radius: 20px;
 	margin: 20px;
 	box-shadow: 0 10px 10px #ccc;
 	border-radius: 5%;
   position:absolute;
-  left:820px;
+  left: 642px;
+  margin-top:350px;
 }
 
 /*//////////////////   LOGIN   ////////////////////*/
@@ -454,6 +488,7 @@ input {
 	float: left;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 23px;
+  font-weight: bold;
 	color: grey;
 	margin-right: 50px;
   margin-top: 20px;
@@ -467,6 +502,7 @@ input {
 	float: right;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 23px;
+  font-weight: bold;
 	color: grey;
 	margin-left: 50px;
   margin-top: 20px;
