@@ -12,6 +12,7 @@ import ParentsSendMoneyForm from './components/ParentsSendMoneyForm';
 import ChildrensVisualSettings from './components/ChildrensVisualSettings';
 import ChildrensTransactionListItem from './components/ChildrensTransactionListItem';
 import Login from './components/ChildrensLogin';
+import CreditCard from './components/CreditCard';
 
 function App() {
   return (
@@ -19,13 +20,14 @@ function App() {
       <NavBar />
       {/* <ParentsSendMoneyForm /> */}
       {/* <Login /> */}
+      {/* <CreditCard /> */}
       {/* <ChildrensVisualSettings /> */}
       {/* <ChildrensRequestList /> */}
       {/* <ParentsApprovalList />
       <ParentsChildrenList />
       <ParentsDashboard />*/}
-      {/* <ChildrensDashboard /> */}
-      <ChildrensTransactionList />
+      <ChildrensDashboard />
+      {/* <ChildrensTransactionList /> */}
 
     </div>
   );
