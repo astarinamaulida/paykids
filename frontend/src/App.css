@@ -6,6 +6,23 @@ p.title {
   font-family: 'Quicksand', sans-serif;
 }
 
+p.heading {
+  margin-top:240px;
+  font-weight: 700;
+  font-size: 32px;
+  color: rgb(67, 67, 67);
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  left: 250px;
+}
+
+br {
+  display: block;
+  margin-bottom: 2px;
+  font-size:2px;
+  line-height: 30px;
+}
+
 h3 {
   font-family: 'Quicksand', sans-serif;
 }

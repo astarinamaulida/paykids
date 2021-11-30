@@ -36,6 +36,8 @@ export default function ChildrensVisualSettings(props) {
     <main className="container">
       <div className="select-card">
         <div className="gallery-item">
+        <p className="heading">Settings: Select your card design </p>
+        <br></br>
           <img className="cc-main-design-top" src={cardBackground} />
         </div>
       </div> 
