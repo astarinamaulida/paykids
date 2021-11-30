@@ -5,6 +5,7 @@ import Button from "muicss/lib/react/button";
 export default function ChildrensDashboard(props) {
   return (
     <main className="container">
+         <p className="heading">Tina: Dashboard </p>
       <article className="frame-credit-card">
         <div className="text">
           <p>Credit Card Information</p>
