@@ -10,20 +10,23 @@ import ParentsDashboard from './components/ParentsDashboard';
 import ChildrensDashboard from './components/ChildrensDashboard';
 import ParentsSendMoneyForm from './components/ParentsSendMoneyForm';
 import ChildrensVisualSettings from './components/ChildrensVisualSettings';
-
+import ChildrensTransactionListItem from './components/ChildrensTransactionListItem';
+import Login from './components/ChildrensLogin';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <h1>This is App</h1>
       {/* <ParentsSendMoneyForm /> */}
-      <ChildrensVisualSettings />
+      {/* <Login /> */}
+      {/* <ChildrensVisualSettings /> */}
       {/* <ChildrensRequestList /> */}
       {/* <ParentsApprovalList />
       <ParentsChildrenList />
-      <ParentsDashboard />
-      <ChildrensDashboard /> */}
+      <ParentsDashboard />*/}
+      {/* <ChildrensDashboard /> */}
+      <ChildrensTransactionList />
+
     </div>
   );
 }

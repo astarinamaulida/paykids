@@ -1,15 +1,3 @@
-p.title {
-  margin-top:30px;
-  font-weight: 700;
-  font-size: 25px;
-  color: rgb(82, 82, 82);
-  font-family: 'Quicksand', sans-serif;
-}
-
-h3 {
-  font-family: 'Quicksand', sans-serif;
-}
-
 .App {
   text-align: center;
   background-color:rgb(255, 255, 255);
@@ -27,7 +15,7 @@ h3 {
   0px 4px 8px rgba(0, 0, 0, 0.04), 
   0px 0px 1px rgba(0, 0, 0, 0.04);
   border-radius: 59px;
-  height: 1800px;
+  height: 9000px;
 }
 
 .App-logo {
@@ -87,7 +75,7 @@ nav {
 	font-size: 20px;
 	background-color: #ffc107;
 	opacity: 0.85;
-	font-weight: bold;
+	font-weight: 1000;
 	width: 150px;
 	height: 50px;
 	position: absolute;
@@ -98,7 +86,6 @@ nav {
 	padding-top: 6px;
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
-	box-shadow: 0 10px 10px #ccc;
 }
 
 /*///////////   SEND MONEY   ///////////*/
@@ -193,7 +180,7 @@ p {
 }
 
 
-/*//////////////////Pick Card Designs////////////////////*/
+/*////////////////// ChildrensVisualSettings ////////////////////*/
 
 .cc-main-design {
 	width: 320px;
@@ -315,125 +302,62 @@ p {
   left:820px;
 }
 
-/*//////////////////   LOGIN   ////////////////////*/
-
-.credit {
-  margin-top: -30px;
-  margin-bottom: 30px;
-  height: 250px;
-  width: 400px;
-  border: 0;
-  border-radius: 20px;
-  background: url(https://i.ibb.co/bRxw8RD/kids-1.png) no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  box-shadow: 0 10px 10px #ccc;
-}
-.credit__card-number {
-  height: 91px;
-  padding-top: 120px;
-  font-weight: 600;
-  font-size: 25px;
-  margin-top: 80px;
-  letter-spacing: 4px;
-	font-family: 'Quicksand', sans-serif;
-}
-.credit__ccv {
-  height: 24px;
-  float: right;
-  margin-top: -10px;
-  margin-right: 27px;
-  text-transform: uppercase;
-	font-family: 'Quicksand', sans-serif;
-}
-.credit__name {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 16px;
-  height: 25px;
-  margin-right: 1px;
-	font-family: 'Quicksand', sans-serif;
-}
-.credit__date {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 16px;
-  height: 25px;
-  margin-left: 8px;
-  margin-right: 10px;
-	font-family: 'Quicksand', sans-serif;
-}
-.credit label {
-  color: #fff;
-  margin-left: 8px;
-  margin-bottom: 10px;
-	font-family: 'Quicksand', sans-serif;
-}
-.credit .credit__date {
-  margin-left: -5px;
-}
-label {
-	font-family: 'Quicksand', sans-serif;
-}
-.margin-top50 {
-  margin-top: 50px;
-  margin-left: 30px;
-  box-shadow: 2px 2px 4px 0px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  padding: 1em 2em;
-  color: #9e9e9e;
+.select-card {
+  display: flex;
+  flex-direction: row;
 }
 
-.frame-login {
+/*//////////////////Children Dashboard////////////////////*/
+
+.frame {
 	display: flex;
 	padding: 10px;
-	height: 620px;
+	border: 1px #dbd6d6;
+	height: 1000px;
 	width: 700px;
+	box-shadow: 0 3px 5px #ccc;
+	border-radius: 5%;
 	font-family: 'Quicksand', sans-serif;
 	align-items: center;
 	flex-direction: column;
 	margin-bottom: 50px;
+	margin-top:100px;
 	position: absolute;
 	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
 	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 	border-radius: 28px;
-  top:350px;
-  left:650px
 }
 
-.mui-btn.button-login {
-	color: white;
-	font-size: 20px;
-	background-color: #ffc107;
-	opacity: 0.85;
-	font-weight: bold;
-	width: 150px;
-	height: 50px;
-	position: absolute;
-	right: 285px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding-top: 6px;
-	border-radius: 20px;
+/* .column-left {
+	float: left;
 	font-family: 'Quicksand', sans-serif;
-	box-shadow: 0 10px 10px #ccc;
+	font-size: 23px;
+	color: grey;
+	margin-right: 50px;
+} */
+.column-left {
+	float: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 23px;
+	color: grey;
+	margin-right: 50px;
 }
 
-input {
-	font-size: 18px;
+.row {
+	margin-top: 50px;
+}
+
+/* .column-right {
+	float: right;
 	font-family: 'Quicksand', sans-serif;
-	margin-bottom: 100px;
-	left: 0;
-	margin: 10px;
-	border: none;
-	border-radius: 10px;
-	height: 50px;
-  width: 350px;
-	text-align: center;
-	color: black;
-	background-color: #ffffff;
-  box-shadow: 0 10px 10px rgb(215, 215, 215);
-  font-family: 'Quicksand', sans-serif;
+	font-size: 23px;
+	color: grey;
+	margin-left: 50px;
+} */
+.column-right {
+	float: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 23px;
+	color: grey;
+	margin-left: 50px;
 }
