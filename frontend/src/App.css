@@ -548,3 +548,107 @@ input {
   margin-left: 122px;
 }
 
+
+/*///////////   PARENT'S APPROVAL LIST   /////////////*/
+
+.frame-money-request {
+	display: flex;
+	padding: 10px;
+	height: 620px;
+	width: 700px;
+	font-family: 'Quicksand', sans-serif;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 50px;
+	position: absolute;
+	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+	border-radius: 28px;
+  top:500px;
+  left:530px
+}
+
+.mui-btn.button-check{
+	color: white;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	width: 80px;
+	height: 50px;
+	margin-left: 60px;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px #ccc;
+}
+
+.mui-btn.button-go{
+	color: white;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	height: 50px;
+	margin-top: 65px;
+	margin-left: 60px;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px #ccc;
+}
+
+.mui-btn.button-turn-off{
+	color: white;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	height: 50px;
+	margin-left: 60px;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px #ccc;
+}
+
+.column-left-req {
+	float: left;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 23px;
+  font-weight: bold;
+	color: grey;
+	margin-right: 50px;
+  margin-top: 20px;
+}
+
+
+.column-right-req {
+	float: right;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 23px;
+  font-weight: bold;
+	color: grey;
+	margin-left: 50px;
+  margin-top: 20px;
+  align-items: stretch;
+  flex-grow: 1
+}
+
+.row-req {
+	margin-top: 30px;
+  display: flex;
+  flex-direction: flex;
+  justify-content: flex-end;
+  align-self:flex-end;
+}
+
+.row-name {
+	margin-top: 30px;
+  display: flex;
+  flex-direction: flex;
+  justify-content: center ;
+  align-self:flex-start;
+  gap: 95px;
+  margin-left: 115px;
+}
+
+.row-approval {
+  margin-left: 343px;
+	margin-top: 78px;
+	position: absolute;
+}

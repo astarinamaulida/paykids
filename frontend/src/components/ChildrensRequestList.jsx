@@ -3,9 +3,9 @@ import ChildrensRequestListItem from "./ChildrensRequestListItem";
 
 export default function ChildrensRequestList(props) {
   const requestsList = [
-    { id: 1 , child_id: 1, account_number: 1, request_amount: 5,  request_note: 'lunch money'},
-    { id: 2 , child_id: 1, account_number: 1, request_amount: 15, request_note: 'hair thing'},
-    { id: 3 , child_id: 1, account_number: 1, request_amount: 30, request_note: 'Sephora'}
+    { id: 1 , child_id: 1, account_number: 1, request_amount: 10,  request_note: 'Lunch money'},
+    { id: 2 , child_id: 1, account_number: 1, request_amount: 15, request_note: 'Coffee snack'},
+    { id: 3 , child_id: 1, account_number: 1, request_amount: 35, request_note: 'School stuffs'},
   ];
   
   const parsedRequests = Array.isArray(requestsList) && 
@@ -13,8 +13,7 @@ export default function ChildrensRequestList(props) {
     <ChildrensRequestListItem  {...request} key={request.id} />));
     
   return (
-    <div>
-      <h3>Approve Request List</h3>
+    <div> 
       <section>
        {parsedRequests }
       </section>

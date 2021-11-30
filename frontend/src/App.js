@@ -22,8 +22,8 @@ function App() {
       {/* <Login /> */}
       {/* <CreditCard /> */}
       {/* <ChildrensVisualSettings /> */}
-      <ChildrensRequestList />
-      {/* <ParentsApprovalList /> */}
+      {/* <ChildrensRequestList /> */}
+      <ParentsApprovalList />
       {/* <ParentsChildrenList /> */}
       {/* <ParentsDashboard /> */}
       {/* <ChildrensDashboard /> */}

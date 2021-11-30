@@ -1,17 +1,35 @@
-import ParentsApprovalListItem from "./ParentsApprovaIListItem";
+import ChildrensRequestList from "./ChildrensRequestList";
+import Button from "muicss/lib/react/button";
 
 export default function ParentsApprovalList(props) {
   return (
-    <div>
-      <h1>I am ParentsApprovalList</h1>
-      <section>
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        <ParentsApprovalListItem />
-        </section>
-    </div>
-  )
+    <main className="container">
+      <p className="heading">Tina's Parent: Dashboard </p>
+      <article className="frame-money-request">
+        <span>
+          <p>Approve Money: Tina</p>
+        </span>
+        <div className="row-name">
+          <p>Purpose</p>
+          <p>Amount</p>
+        </div>
+        <div className="row-approval">
+          <p>Approval</p>
+        </div>
+        <div>
+          <ChildrensRequestList />
+        </div>
+        <div>
+          <Button className="button-go" type="submit" value="Submit">
+            Go to Tina's Account
+          </Button>
+        </div>
+        <div>
+          <Button className="button-turn-off" type="submit" value="Submit">
+            Turn Off Account Setting: Tina
+          </Button>
+        </div>
+      </article>
+    </main>
+  );
 }
