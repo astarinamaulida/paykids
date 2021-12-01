@@ -1,5 +1,5 @@
 import ChildrensRequestList from "./ChildrensRequestList";
-import Button from "muicss/lib/react/button";
+import Button from 'muicss/lib/react/button';
 
 export default function ParentsApprovalList(props) {
   return (
@@ -7,7 +7,7 @@ export default function ParentsApprovalList(props) {
       <p className="heading">Tina's Parent: Dashboard </p>
       <article className="frame-money-request">
         <span>
-          <p>Approve Money: Tina</p>
+          <p className="title-approve">Approve Money: Tina</p>
         </span>
         <div className="row-name">
           <p>Purpose</p>
