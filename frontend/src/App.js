@@ -18,60 +18,57 @@ import ChildrensRequestForm from "./components/ChildrensRequestForm";
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import { useState } from 'react';
 
-
 function App() {
   const [currentChild, setCurrentChild] = useState(null);
   const [currentParent, setCurrentParent] = useState(null);
+
+
+
   return (
     <BrowserRouter>
       <div className="App">
         <header>
-        <div className="landingpage"></div>
-        <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
-        <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link> </Button>
-
-          {/* <nav> */}
-          {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/> */}
-          <div>
-        {/* <Button primary className="button-logout">
-          Logout
-        </Button> */}
-      </div>
-          {/* {!currentChild && !currentParent && <Button primary className="button-login"><Link to="/childrenslogin">Childrens Login</Link> </Button> }
-          {currentChild && !currentParent && <Button primary className="button-dashboard"><Link to="/childrensdashboard">Childrens Dashboard</Link></Button> }
-          {currentChild && !currentParent && <Button primary className="button-settings"><Link to="/childrenssettings">Settings</Link></Button> }
-         {!currentChild && <Button primary className="button-login"><Link to="/childrenslogin">Childrens Login</Link></Button> } */}
-          {!currentChild &&  <Button primary className="button-login"><Link to="/childrenslogin">Childrens Login</Link> </Button> }
-          {currentChild &&  <Button primary className="button-dashboard"><Link to="/childrensdashboard">Childrens Dashboard</Link></Button> }
-          {currentChild && <Button primary className="button-settings"><Link to="/childrenssettings">Settings</Link></Button> }
-         {!currentChild && <Button primary className="button-login"><Link to="/childrenslogin">Childrens Login</Link></Button> }
-          <Link to="/childrensdashboard">Childrens Dashboard</Link>
-          <Link to="/childrenssettings">Settings</Link>
-          {/* </nav> */}
+          <nav>
+          <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>
+            <div>
+              {!currentChild && <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link to="/childrensdashboard">Login</Link></Button> }
+              {currentChild &&  <Button  primary className="button-dashboard"><Link to="/childrensdashboard">Childrens Dashboard</Link></Button> }
+              {currentChild &&  <Button  primary className="button-settings"><Link to="/childrenssettings">Settings</Link></Button> }
+              {currentChild &&  <Button  primary className="button-settings"><Link to="/requestform">Request</Link></Button> }
+              {currentChild &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link to="/childrenslogin">Logout</Link></Button> }
+            </div>
+          </nav>
         </header>
-        {!currentChild && !currentParent &&(
-          <button onClick={() => setCurrentChild({name: "Tina"})}>Login Child</button>
+        
+       
+        {currentChild && (
+          <Routes>
+            <Route path="/childrensdashboard" element={<ChildrensDashboard />} />
+            <Route path="/childrenssettings"  element={<ChildrensVisualSettings />} />
+            <Route path="/requestform"        element={<ChildrensRequestForm />} />
+          </Routes>
         )}
-        {currentChild && <ChildrensDashboard />}
-        {currentChild && !currentParent && (
-          <button onClick={() => ( setCurrentChild(null))  }>Logout Child</button>
-        )}
-        <Routes>
-          <Route path="/childrenslogin" element={<ChildrensLogin />} />
-          <Route path="/childrensdashboard" element={<ChildrensDashboard />} />
-          <Route path="/childrenssettings" element={<ChildrensVisualSettings />} />
-        </Routes>
-
-      {/* <ParentsSendMoneyForm /> */}
+        {!currentChild && (
+          <Routes>
+            <Route path="/childrenslogin"     element={<ChildrensLogin />} />
+          </Routes>
+         )}
+   
       {/* <Login /> */}
+
+       {/* < ChildrensRequestForm /> */}
       {/* <ChildrensVisualSettings /> */}
+       {/* <ChildrensDashboard /> */}
+
       {/* <ParentsApprovalList /> */}
       {/* <ParentsDashboard /> */}
-      {/* <ChildrensDashboard /> */}
-      {/* < ChildrensRequestForm /> */}
+      {/* <ParentsSendMoneyForm /> */}
+     
+     
       </div>
     </BrowserRouter>
   );
 }
 
 export default App;
+
