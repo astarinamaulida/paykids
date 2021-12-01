@@ -5,7 +5,7 @@ export default function NavBar(props) {
 
   return (
     <nav>
-      <img className="nav__logo" src={logo} />
+      <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png" />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css"

@@ -12,25 +12,61 @@ import ChildrensDashboard from "./components/ChildrensDashboard";
 import ParentsSendMoneyForm from "./components/ParentsSendMoneyForm";
 import ChildrensVisualSettings from "./components/ChildrensVisualSettings";
 import ChildrensTransactionListItem from "./components/ChildrensTransactionListItem";
-import Login from "./components/ChildrensLogin";
+import ChildrensLogin from "./components/ChildrensLogin";
 import CreditCard from "./components/CreditCard";
 import ChildrensRequestForm from "./components/ChildrensRequestForm";
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { useState } from 'react';
+
 
 function App() {
+  const [currentChild, setCurrentChild] = useState(null);
+  const [currentParent, setCurrentParent] = useState(null);
   return (
-    <div className="App">
-      <nav>
-        <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>
-      </nav>
-      {/* <NavBar /> */}
+    <BrowserRouter>
+      <div className="App">
+        <header>
+          {/* <nav> */}
+          {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/> */}
+          <div>
+        {/* <Button primary className="button-logout">
+          Logout
+        </Button> */}
+      </div>
+          {/* {!currentChild && !currentParent && <Button primary className="button-login"><Link to="/childrenslogin">Childrens Login</Link> </Button> }
+          {currentChild && !currentParent && <Button primary className="button-dashboard"><Link to="/childrensdashboard">Childrens Dashboard</Link></Button> }
+          {currentChild && !currentParent && <Button primary className="button-settings"><Link to="/childrenssettings">Settings</Link></Button> }
+         {!currentChild && <Button primary className="button-login"><Link to="/childrenslogin">Childrens Login</Link></Button> } */}
+          {!currentChild &&  <Button primary className="button-login"><Link to="/childrenslogin">Childrens Login</Link> </Button> }
+          {currentChild &&  <Button primary className="button-dashboard"><Link to="/childrensdashboard">Childrens Dashboard</Link></Button> }
+          {currentChild && <Button primary className="button-settings"><Link to="/childrenssettings">Settings</Link></Button> }
+         {!currentChild && <Button primary className="button-login"><Link to="/childrenslogin">Childrens Login</Link></Button> }
+          <Link to="/childrensdashboard">Childrens Dashboard</Link>
+          <Link to="/childrenssettings">Settings</Link>
+          {/* </nav> */}
+        </header>
+        {!currentChild && !currentParent &&(
+          <button onClick={() => setCurrentChild({name: "Tina"})}>Login Child</button>
+        )}
+        {currentChild && <ChildrensDashboard />}
+        {currentChild && !currentParent && (
+          <button onClick={() => ( setCurrentChild(null))  }>Logout Child</button>
+        )}
+        <Routes>
+          <Route path="/childrenslogin" element={<ChildrensLogin />} />
+          <Route path="/childrensdashboard" element={<ChildrensDashboard />} />
+          <Route path="/childrenssettings" element={<ChildrensVisualSettings />} />
+        </Routes>
+
       {/* <ParentsSendMoneyForm /> */}
       {/* <Login /> */}
       {/* <ChildrensVisualSettings /> */}
       {/* <ParentsApprovalList /> */}
       {/* <ParentsDashboard /> */}
-      <ChildrensDashboard />
+      {/* <ChildrensDashboard /> */}
       {/* < ChildrensRequestForm /> */}
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
