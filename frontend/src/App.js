@@ -28,24 +28,24 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header>
-          <nav>
+         
           <div className="landingpage"></div>
         <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
         <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link> </Button>
 
-          {/* <nav> */}
+       
           {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/> */}
           <div>
           </div>
-          <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>
+          {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>
             <div>
               {!currentChild && <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link to="/childrensdashboard">Login</Link></Button> }
               {currentChild &&  <Button  primary className="button-dashboard"><Link to="/childrensdashboard">Childrens Dashboard</Link></Button> }
               {currentChild &&  <Button  primary className="button-settings"><Link to="/childrenssettings">Settings</Link></Button> }
               {currentChild &&  <Button  primary className="button-settings"><Link to="/requestform">Request</Link></Button> }
               {currentChild &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link to="/childrenslogin">Logout</Link></Button> }
-            </div>
-          </nav>
+            </div> */}
+         
         </header>
         
        
