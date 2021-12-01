@@ -652,3 +652,35 @@ input {
 	margin-top: 78px;
 	position: absolute;
 }
+
+/*//////////    CHILDREN REQUEST FORM    ///////////*/
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+}
+
+label p {
+	font-size: 25px;
+	font-weight: bolder;
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 100px;
+	left: 0;
+	margin: 10px;
+	text-align: center;
+}
+
+label input {
+	font-size: 22px;
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 100px;
+	left: 0;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	height: 50px;
+	width: 300px;
+	text-align: center;
+	color: black;
+	background-color: #F0F0F0;
+}

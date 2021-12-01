@@ -13,6 +13,7 @@ import ChildrensVisualSettings from './components/ChildrensVisualSettings';
 import ChildrensTransactionListItem from './components/ChildrensTransactionListItem';
 import Login from './components/ChildrensLogin';
 import CreditCard from './components/CreditCard';
+import ChildrensRequestForm from './components/ChildrensRequestForm'
 
 function App() {
   return (
@@ -23,10 +24,11 @@ function App() {
       {/* <CreditCard /> */}
       {/* <ChildrensVisualSettings /> */}
       {/* <ChildrensRequestList /> */}
-      <ParentsApprovalList />
+      {/* <ParentsApprovalList /> */}
       {/* <ParentsChildrenList /> */}
       {/* <ParentsDashboard /> */}
       {/* <ChildrensDashboard /> */}
+      < ChildrensRequestForm />
 
     </div>
   );
