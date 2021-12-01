@@ -72,7 +72,7 @@ export default function CreditCard(props) {
           </div>
         </div>
       </div>
-      <div className="small-5 columns end">
+      {/* <div className="small-5 columns end">
         <div className="callout margin-top50">
           <label>
             Name
@@ -100,7 +100,7 @@ export default function CreditCard(props) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

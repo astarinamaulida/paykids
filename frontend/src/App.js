@@ -26,6 +26,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header>
+        <div className="landingpage"></div>
+        <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
+        <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link> </Button>
+
           {/* <nav> */}
           {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/> */}
           <div>
