@@ -66,11 +66,11 @@ function App() {
         )}
         {!currentChild && (
           <Routes>
-             
             <Route path="/"  />
-            <Route path="/childrenslogin"     element={<ChildrensLogin />} />
           </Routes>
          )}
+    
+        
    
       {/* <Login /> */}
        {/* < ChildrensRequestForm /> */}

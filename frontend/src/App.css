@@ -97,6 +97,7 @@ a.link {
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;
+  z-index: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -170,6 +171,7 @@ nav {
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
+  z-index: 900;
 }
 
 .mui-btn.button-theme {
@@ -192,6 +194,7 @@ nav {
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
 	margin-top: 180px;
+  z-index: 900;
 }
 
 .mui-btn.button-request {
@@ -214,6 +217,7 @@ nav {
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
 	margin-top: 180px;
+  z-index: 900;
 }
 
 /*////////   PARENT'S DASHBOARD   ///////*/
@@ -600,6 +604,7 @@ label.labelcc {
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
 	margin-top: 180px;
+  z-index: 900;
 }
 
 .mui-btn.button-dashboard {
@@ -622,6 +627,7 @@ label.labelcc {
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
 	margin-top: 180px;
+  z-index: 900;
 }
 
 .mui-btn.button-loginpage {
