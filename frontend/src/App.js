@@ -18,6 +18,7 @@ import ChildrensRequestForm from "./components/ChildrensRequestForm";
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import { useState } from 'react';
 import PageStyling from "./components/PageStyling";
+import LandingPageBackground from "./components/LandingPageBackground";
 
 function App() {
   const [currentChild, setCurrentChild] = useState(null);
@@ -31,7 +32,7 @@ function App() {
       <div className="App">
         <header>
        
-        {!currentChild  && <div className="landingpage"></div>}
+        {!currentChild  && <LandingPageBackground />}
         {/* <div className="landingpage"></div>
         <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
         <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button> */}
