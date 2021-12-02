@@ -582,6 +582,7 @@ label.labelcc {
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
 	margin-top: 180px;
+  z-index: 900;
 }
 
 .mui-btn.button-settings {
@@ -649,6 +650,7 @@ label.labelcc {
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
+  z-index: 900;
 }
 
 input {
