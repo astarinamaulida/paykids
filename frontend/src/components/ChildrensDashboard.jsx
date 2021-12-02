@@ -16,7 +16,7 @@ export default function ChildrensDashboard(props) {
             href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css"
           />
           <CreditCard />
-          <p>Money Available: $ 12.25</p>
+          <p>Money Available: $12.25</p>
         </div>
         <article className="frame-recent">
           <span>

@@ -11,10 +11,12 @@ export default function ChildrensLogin(props) {
   };
 
   return (
+    <div className="login-landingpage">
     <main className="container">
+      
       <article className="frame-login">
         <div>
-          <p class="title">Welcome to Paykids!</p>
+          <p class="title">Welcome back to Paykids!</p>
           <div className="row">
             <div className="small-5 small-offset-1 columns ">
               <div className="callout credit">
@@ -25,8 +27,8 @@ export default function ChildrensLogin(props) {
                 </div>
                 <div className="row">
                   <div className="column">
-                    <p className="credit__card-number">
-                      {"E-Wallet for Kids!"}
+                    <p className="cc_inside">
+                      {"E-Wallet for Kids"}
                     </p>
                   </div>
                   <div className="small-9 columns"></div>
@@ -69,5 +71,6 @@ export default function ChildrensLogin(props) {
         </div>
       </article>
     </main>
+    </div>
   );
 }

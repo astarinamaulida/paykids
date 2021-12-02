@@ -29,6 +29,19 @@ p.heading {
 	overflow: hidden;
 }
 
+.login-landingpage {
+	background-image: url("https://i.ibb.co/gvhJKpY/3.png");
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	max-width: 2760px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
 a:-webkit-any-link {
 	color: white;
 	text-decoration: none;
@@ -58,8 +71,9 @@ h3 {
 .mui-btn.button-kids-login{
 	color: white;
 	border: none;
-	font-size: 25px;
+	font-size: 20px;
 	background-color: #197BBD;
+	font-weight: bold;
 	opacity: 0.85;
 	width: 200px;
 	height: 50px;
@@ -68,21 +82,23 @@ h3 {
 	left: 180px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	padding-top: 6px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px rgb(136, 136, 136);
+	border-radius: 20px;
 	z-index: 900;
 }
 
 .mui-btn.button-kids-login:hover{
-	background-color: #197bbd6b;
+	background-color:  #197bbda8;
 }
 
 .mui-btn.button-parents-login{
 	color: white;
 	border: none;
-	font-size: 25px;
+	font-size: 20px;
+	font-weight: bold;
 	background-color: #197BBD;
 	opacity: 0.85;
 	height: 50px;
@@ -92,20 +108,26 @@ h3 {
 	left: 420px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	padding-top: 6px;
+	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px rgb(136, 136, 136);
-	
 }
 
 .mui-btn.button-parents-login:hover{
-background-color: #197bbd6b;
+background-color: #197bbda8;
 }
 
 
 a.link {
 	color: white !important;
+	text-decoration: none;
+	text-transform: none;
+}
+
+a.link:hover {
+	color: rgb(63, 63, 63) !important;
 	text-decoration: none;
 	text-transform: none;
 }
@@ -138,6 +160,7 @@ a.link {
 }
 
 .nav__logo {
+	position:sticky;
 	float: left;
 	margin-left: 100px;
 	margin-top: -50px;
@@ -176,14 +199,13 @@ nav {
 	background-color: #ffc107;
 	opacity: 0.85;
 	font-weight: bold;
-	width: 150px;
+	width: 200px;
 	height: 50px;
 	position: absolute;
 	right: 350px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 6px;
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
@@ -197,15 +219,14 @@ nav {
 	background-color: #ffc107;
 	opacity: 0.85;
 	font-weight: bold;
-	width: 150px;
+	width: 200px;
 	height: 50px;
 	position: absolute;
-	right: 620px;
+	right: 470px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding-top: 6px;
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
@@ -220,15 +241,14 @@ nav {
 	background-color: #ffc107;
 	opacity: 0.85;
 	font-weight: bold;
-	width: 150px;
+	width: 200px;
 	height: 50px;
 	position: absolute;
-	right: 450px;
+	right: 910px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding-top: 6px;
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
@@ -271,7 +291,7 @@ nav {
 .frame-send-money {
 	display: flex;
 	padding: 10px;
-	height: 400px;
+	height: 380px;
 	width: 700px;
 	font-family: 'Quicksand', sans-serif;
 	align-items: center;
@@ -281,6 +301,7 @@ nav {
 	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
 	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 	border-radius: 28px;
+	padding-top: 80px;
 	top: 500px;
 }
 
@@ -296,6 +317,7 @@ nav {
 	margin-top: 30px;
 	border-radius: 20px;
 	box-shadow: 0 10px 10px #ccc;
+	text-transform: none;
 }
 
 .mui-btn.button-cancel {
@@ -310,6 +332,7 @@ nav {
 	border-radius: 20px;
 	box-shadow: 0 10px 10px #ccc;
 	box-shadow: 0 10px 10px #ccc;
+	text-transform: none;
 }
 
 .container {
@@ -356,7 +379,7 @@ p {
 
 
 .cc-design1 {
-	width: 320px;
+	width: 350px;
 	height: 206px;
 	border-radius: 20px;
 	margin: 20px;
@@ -367,7 +390,7 @@ p {
 }
 
 .cc-design2 {
-	width: 320px;
+	width: 350px;
 	height: 206px;
 	border-radius: 20px;
 	margin: 20px;
@@ -378,7 +401,7 @@ p {
 }
 
 .cc-design3 {
-	width: 320px;
+	width: 350px;
 	height: 206px;
 	border-radius: 20px;
 	margin: 20px;
@@ -389,7 +412,7 @@ p {
 }
 
 .cc-design4 {
-	width: 320px;
+	width: 350px;
 	height: 206px;
 	border-radius: 20px;
 	margin: 20px;
@@ -400,7 +423,7 @@ p {
 }
 
 .cc-design5 {
-	width: 320px;
+	width: 350px;
 	height: 206px;
 	border-radius: 20px;
 	margin: 20px;
@@ -411,7 +434,7 @@ p {
 }
 
 .cc-design6 {
-	width: 320px;
+	width: 350px;
 	height: 206px;
 	border-radius: 20px;
 	margin: 20px;
@@ -446,8 +469,8 @@ p {
 	padding: 0;
 	align-content: flex-start;
 	height: 630px;
-	width: 1100px;
-	left: 620px;
+	width: 1200px;
+	left: 570px;
 	font-family: 'Quicksand', sans-serif;
 	flex-direction: row;
 	justify-content: center;
@@ -470,6 +493,7 @@ p {
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
+	text-transform: none;
 }
 
 .cc-main-design-top {
@@ -506,8 +530,17 @@ p {
 	font-weight: 600;
 	font-size: 25px;
 	margin-top: 60px;
-	margin-left: -30px;
-	letter-spacing: 4px;
+	margin-left: -105px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.cc_inside {
+	height: 91px;
+	padding-top: 120px;
+	font-weight: 600;
+	font-size: 25px;
+	margin-top: 60px;
+	margin-left: -150px;
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -578,28 +611,28 @@ label.labelcc {
 	flex-direction: column;
 	margin-bottom: 50px;
 	position: absolute;
-	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 20%);
 	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 	border-radius: 28px;
 	top: 350px;
+	margin-left: -710px;
 }
 
 .mui-btn.button-login {
 	color: white;
 	border: none;
 	font-size: 20px;
-	background-color: #ffc107;
+	background-color: #197BBD;
 	opacity: 0.85;
 	font-weight: bold;
-	width: 150px;
+	width: 200px;
 	height: 50px;
 	position: absolute;
-	right: 285px;
+	right: 250px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding-top: 6px;
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
@@ -614,15 +647,14 @@ label.labelcc {
 	background-color: #ffc107;
 	opacity: 0.85;
 	font-weight: bold;
-	width: 150px;
+	width: 200px;
 	height: 50px;
 	position: absolute;
-	right: 790px;
+	right: 690px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding-top: 6px;
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
@@ -637,15 +669,14 @@ label.labelcc {
 	background-color: #ffc107;
 	opacity: 0.85;
 	font-weight: bold;
-	width: 150px;
+	width: 200px;
 	height: 50px;
 	position: absolute;
-	right: 960px;
+	right: 1130px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding-top: 6px;
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
@@ -668,7 +699,6 @@ label.labelcc {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding-top: 6px;
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
@@ -777,7 +807,7 @@ input {
 .frame-money-request {
 	display: flex;
 	padding: 10px;
-	height: 620px;
+	height: 570px;
 	width: 700px;
 	font-family: 'Quicksand', sans-serif;
 	align-items: center;
