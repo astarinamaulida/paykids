@@ -33,10 +33,9 @@ function App() {
         <header>
        
         
-        {/* <div className="landingpage"></div>*/}
+       
       
        
-          {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/> */}
           <div>
           </div>
            {currentChild  && <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>}
@@ -48,10 +47,10 @@ function App() {
               {currentChild   &&  <Button  primary className="button-theme"><Link className="link" to="/style">My Style</Link></Button> }
               {currentChild   &&  <Button  primary className="button-request"><Link className="link" to="/requestform">Request</Link></Button> }
               {currentChild   &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link className="link" to="/">Logout</Link></Button> }
-              {/* {!currentChild  &&  <Button  className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>}
-              {!currentChild  &&  <Button  className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>} */}
+              {/* <div className="landingpage"></div>*/}
+              {/* {!currentChild  &&  <Button  className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>} */}
+              {/* {!currentChild  &&  <Button  className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>}  */}
             </div>
-         
         </header>
         
        
@@ -63,12 +62,6 @@ function App() {
             <Route path="/requestform"        element={<ChildrensRequestForm />} />
           </Routes>
         )}
-        {/* {!currentChild && (
-          <Routes>
-            <Route path="/childrenslogin" />
-          </Routes>
-         )} */}
-   
           <Routes>
             <Route path="/" element={<LandingPageBackground />}/>
             <Route path="/childrenslogin" element={<ChildrensLogin />} />
