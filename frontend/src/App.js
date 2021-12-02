@@ -23,7 +23,7 @@ import LandingPageBackground from "./components/LandingPageBackground";
 function App() {
   const [currentChild, setCurrentChild] = useState(null);
   const [currentParent, setCurrentParent] = useState(null);
-  const [miniNav, setMiniNav] = useState(null);
+ 
 
 
 
@@ -33,9 +33,8 @@ function App() {
         <header>
        
         {!currentChild  && <LandingPageBackground />}
-        {/* <div className="landingpage"></div>
-        <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
-        <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button> */}
+        {/* <div className="landingpage"></div>*/}
+      
        
           {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/> */}
           <div>
@@ -49,8 +48,8 @@ function App() {
               {currentChild   &&  <Button  primary className="button-theme"><Link className="link" to="/style">My Style</Link></Button> }
               {currentChild   &&  <Button  primary className="button-request"><Link className="link" to="/requestform">Request</Link></Button> }
               {currentChild   &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link className="link" to="/childrenslogin">Logout</Link></Button> }
-              {!currentChild  &&  <Button  className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>}
-              {!currentChild  &&  <Button  className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>}
+              {/* {!currentChild  &&  <Button  className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>}
+              {!currentChild  &&  <Button  className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>} */}
             </div>
          
         </header>
