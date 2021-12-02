@@ -29,6 +29,11 @@ p.heading {
 	overflow: hidden;
 }
 
+a:-webkit-any-link {
+	color: white;
+	text-decoration: none;
+}
+
 h3 {
 	font-family: 'Quicksand', sans-serif;
 }
@@ -66,7 +71,12 @@ h3 {
 	flex-direction: column;
 	padding-top: 6px;
 	font-family: 'Quicksand', sans-serif;
-	box-shadow: 0 10px 10px #ccc;
+	box-shadow: 0 10px 10px rgb(136, 136, 136);
+	z-index: 900;
+}
+
+.mui-btn.button-kids-login:hover{
+	background-color: #197bbd6b;
 }
 
 .mui-btn.button-parents-login{
@@ -85,8 +95,14 @@ h3 {
 	flex-direction: column;
 	padding-top: 6px;
 	font-family: 'Quicksand', sans-serif;
-	box-shadow: 0 10px 10px #ccc;
+	box-shadow: 0 10px 10px rgb(136, 136, 136);
+	
 }
+
+.mui-btn.button-parents-login:hover{
+background-color: #197bbd6b;
+}
+
 
 a.link {
 	color: white !important;
@@ -582,6 +598,7 @@ label.labelcc {
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
 	margin-top: 180px;
+	z-index: 900;
 }
 
 .mui-btn.button-settings {
@@ -649,6 +666,7 @@ label.labelcc {
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
+	z-index: 900;
 }
 
 input {
