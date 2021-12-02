@@ -32,18 +32,16 @@ function App() {
       <div className="App">
         <header>
        
-        {/* {!currentChild  && <LandingPageBackground />} */}
+        
         {/* <div className="landingpage"></div>*/}
       
        
           {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/> */}
           <div>
           </div>
-          <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>
+           {currentChild  && <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>}
             <div>
-           <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link className="link" to="/childrensdashboard">Login</Link></Button> 
-
-              {/* {!currentChild  &&  <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link className="link" to="/childrensdashboard">Login</Link></Button> } */}
+              {!currentChild  &&  <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link className="link" to="/childrensdashboard">Login</Link></Button> }
               {currentChild   &&  <Button  primary className="button-dashboard"><Link className="link" to="/childrensdashboard">Dashboard</Link></Button> }
               {currentChild   &&  <Button  primary className="button-settings"><Link className="link" to="/childrenssettings">Settings</Link></Button> }
               {currentChild   &&  <Button  primary className="button-theme"><Link className="link" to="/childrenssettings">Theme</Link></Button> }
@@ -73,6 +71,7 @@ function App() {
    
           <Routes>
             <Route path="/" element={<LandingPageBackground />}/>
+            <Route path="/childrenslogin" element={<ChildrensLogin />} />
           </Routes>
     
         
