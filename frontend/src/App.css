@@ -7,7 +7,7 @@ p.title {
 }
 
 p.heading {
-	margin-top: 240px;
+	margin-top: -150px;
 	font-weight: 700;
 	font-size: 32px;
 	color: rgb(67, 67, 67);
@@ -32,6 +32,7 @@ p.heading {
 h3 {
 	font-family: 'Quicksand', sans-serif;
 }
+
 
 .App {
 	text-align: center;
@@ -87,9 +88,10 @@ h3 {
 	box-shadow: 0 10px 10px #ccc;
 }
 
-a {
-	color: white;
+a.link {
+	color: white !important;
 	text-decoration: none;
+	text-transform: none;
 }
 
 .App-logo {
@@ -114,9 +116,15 @@ a {
 	color: white;
 }
 
-/* .App-link {
-	color: #61dafb;
-} */
+.App-link {
+	color: white;
+}
+
+.nav__logo {
+	float: left;
+	margin-left: 100px;
+	margin-top: -50px;
+}
 
 @keyframes App-logo-spin {
 	from {
@@ -147,45 +155,7 @@ nav {
 /* Logout Button */
 .mui-btn.button-logout {
 	color: white;
-	font-size: 20px;
-	background-color: #ffc107;
-	opacity: 0.85;
-	font-weight: bold;
-	width: 150px;
-	height: 50px;
-	position: absolute;
-	right: 550px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding-top: 6px;
-	border-radius: 20px;
-	font-family: 'Quicksand', sans-serif;
-	box-shadow: 0 10px 10px #ccc;
-}
-
-.mui-btn.button-dashboard {
-	color: white;
-	font-size: 20px;
-	background-color: #ffc107;
-	opacity: 0.85;
-	font-weight: bold;
-	width: 150px;
-	height: 50px;
-	position: absolute;
-	right: 550px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding-top: 6px;
-	border-radius: 20px;
-	font-family: 'Quicksand', sans-serif;
-	box-shadow: 0 10px 10px #ccc;
-}
-
-.mui-btn.button-settings {
-	color: white;
-	font-size: 20px;
+	font-size: 18px;
 	background-color: #ffc107;
 	opacity: 0.85;
 	font-weight: bold;
@@ -200,6 +170,50 @@ nav {
 	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
+}
+
+.mui-btn.button-theme {
+	color: white;
+	border: none;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	right: 620px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 6px;
+	border-radius: 20px;
+	font-family: 'Quicksand', sans-serif;
+	box-shadow: 0 10px 10px #ccc;
+	margin-top: 180px;
+}
+
+.mui-btn.button-request {
+	color: white;
+	border: none;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	right: 450px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 6px;
+	border-radius: 20px;
+	font-family: 'Quicksand', sans-serif;
+	box-shadow: 0 10px 10px #ccc;
+	margin-top: 180px;
 }
 
 /*////////   PARENT'S DASHBOARD   ///////*/
@@ -246,7 +260,6 @@ nav {
 	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 	border-radius: 28px;
 	top: 500px;
-	left: 530px
 }
 
 /* Confirm & Cancel Button */
@@ -416,7 +429,7 @@ p {
 	font-family: 'Quicksand', sans-serif;
 	flex-direction: row;
 	justify-content: center;
-	margin-top: 700px;
+	margin-top: 350px;
 	position: absolute;
 	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
 	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
@@ -446,7 +459,6 @@ p {
 	border-radius: 5%;
 	position: absolute;
 	left: 922px;
-	margin-top: 350px;
 }
 
 /*//////////////////   LOGIN   ////////////////////*/
@@ -454,7 +466,7 @@ p {
 .credit {
 	margin-top: -40px;
 	margin-bottom: 30px;
-	margin-left: -120px;
+	margin-left: -190px;
 	margin-left: px;
 	height: 250px;
 	width: 400px;
@@ -492,6 +504,7 @@ p {
 	height: 25px;
 	margin-right: 1px;
 	font-family: 'Quicksand', sans-serif;
+	margin-left: 20px;
 }
 
 .credit__date {
@@ -499,7 +512,7 @@ p {
 	font-weight: 600;
 	font-size: 16px;
 	height: 25px;
-	margin-left: 8px;
+	margin-left: 30px;
 	margin-right: 10px;
 	font-family: 'Quicksand', sans-serif;
 }
@@ -521,6 +534,14 @@ label {
 	display: flex;
 }
 
+label.labelcc {
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 10px;
+	display: flex;
+	margin-top: -40px;
+	margin-left: 20px;
+}
+
 .frame-login {
 	display: flex;
 	padding: 10px;
@@ -538,6 +559,72 @@ label {
 }
 
 .mui-btn.button-login {
+	color: white;
+	border: none;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	right: 285px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 6px;
+	border-radius: 20px;
+	font-family: 'Quicksand', sans-serif;
+	box-shadow: 0 10px 10px #ccc;
+	margin-top: 180px;
+}
+
+.mui-btn.button-settings {
+	color: white;
+	border: none;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	right: 790px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 6px;
+	border-radius: 20px;
+	font-family: 'Quicksand', sans-serif;
+	box-shadow: 0 10px 10px #ccc;
+	margin-top: 180px;
+}
+
+.mui-btn.button-dashboard {
+	color: white;
+	border: none;
+	font-size: 20px;
+	background-color: #ffc107;
+	opacity: 0.85;
+	font-weight: bold;
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	right: 960px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 6px;
+	border-radius: 20px;
+	font-family: 'Quicksand', sans-serif;
+	box-shadow: 0 10px 10px #ccc;
+	margin-top: 180px;
+}
+
+.mui-btn.button-loginpage {
 	color: white;
 	border: none;
 	font-size: 20px;
