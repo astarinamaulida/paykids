@@ -28,7 +28,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header>
-          <nav>
+         
           <div className="landingpage"></div>
         <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
         <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link> </Button>
@@ -45,7 +45,7 @@ function App() {
               {currentChild &&  <Button  primary className="button-settings"><Link to="/requestform">Request</Link></Button> }
               {currentChild &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link to="/childrenslogin">Logout</Link></Button> }
             </div>
-          </nav>
+        
         </header>
         
        
