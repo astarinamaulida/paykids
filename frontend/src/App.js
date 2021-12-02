@@ -17,6 +17,7 @@ import CreditCard from "./components/CreditCard";
 import ChildrensRequestForm from "./components/ChildrensRequestForm";
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import { useState } from 'react';
+import PageStyling from "./components/PageStyling";
 
 function App() {
   const [currentChild, setCurrentChild] = useState(null);
@@ -28,24 +29,25 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header>
-         
-          <div className="landingpage"></div>
-        <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
-        <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link> </Button>
+        <PageStyling />
 
-          {/* <nav> */}
+        <div className="landingpage"></div>
+        <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
+        <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>
+       
           {/* <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/> */}
           <div>
           </div>
           <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>
             <div>
-              {!currentChild && <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link to="/childrensdashboard">Login</Link></Button> }
-              {currentChild &&  <Button  primary className="button-dashboard"><Link to="/childrensdashboard">Childrens Dashboard</Link></Button> }
-              {currentChild &&  <Button  primary className="button-settings"><Link to="/childrenssettings">Settings</Link></Button> }
-              {currentChild &&  <Button  primary className="button-settings"><Link to="/requestform">Request</Link></Button> }
-              {currentChild &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link to="/childrenslogin">Logout</Link></Button> }
+              {!currentChild && <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link className="link" to="/childrensdashboard">Login</Link></Button> }
+              {currentChild &&  <Button  primary className="button-dashboard"><Link className="link" to="/childrensdashboard">Dashboard</Link></Button> }
+              {currentChild &&  <Button  primary className="button-settings"><Link className="link" to="/childrenssettings">Settings</Link></Button> }
+              {currentChild &&  <Button  primary className="button-theme"><Link className="link" to="/childrenssettings">Theme</Link></Button> }
+              {currentChild &&  <Button  primary className="button-request"><Link className="link" to="/requestform">Request</Link></Button> }
+              {currentChild &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link className="link" to="/childrenslogin">Logout</Link></Button> }
             </div>
-        
+         
         </header>
         
        
@@ -63,7 +65,6 @@ function App() {
          )}
    
       {/* <Login /> */}
-
        {/* < ChildrensRequestForm /> */}
       {/* <ChildrensVisualSettings /> */}
        {/* <ChildrensDashboard /> */}

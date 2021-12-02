@@ -56,13 +56,13 @@ export default function CreditCard(props) {
               <span className="credit__ccv">{CVV}</span>
             </div>
             <div className="small-9 columns">
-              <label>
+              <label className="labelcc">
                 Card Holder
                 <p className="credit__name">{firstName}</p>
               </label>
             </div>
             <div className="small-3 columns">
-              <label>
+              <label className="labelcc">
                 Expires
                 <p className="credit__date">
                   {expirationMonth} / {expirationYear}

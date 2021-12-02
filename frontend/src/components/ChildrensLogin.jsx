@@ -7,7 +7,7 @@ export default function ChildrensLogin(props) {
 
   const onSubmit = function (event) {
     event.preventDefault();
-    email && props.login(email, password);
+    // email && props.login(email, password);
   };
 
   return (
@@ -36,6 +36,7 @@ export default function ChildrensLogin(props) {
             </div>
           </div>
           <div className="login">
+            {/* <form onSubmit={onSubmit}> */}
             <form onSubmit={onSubmit}>
               <p>
                 <input
@@ -44,6 +45,7 @@ export default function ChildrensLogin(props) {
                   value={email}
                   placeholder="Enter username or email"
                   onChange={(event) => setEmail(event.target.value)}
+                
                 />
               </p>
               <p>
@@ -53,10 +55,12 @@ export default function ChildrensLogin(props) {
                   value={password}
                   placeholder="Password"
                   onChange={(event) => setPassword(event.target.value)}
+                 
                 />
               </p>
               <p className="submit">
-                <Button className="button-login" type="submit" name="commit">
+                {/* <Button className="button-loginpage" type="submit" name="commit"> */}
+                <Button className="button-loginpage"  name="commit">
                   Login
                 </Button>
               </p>
