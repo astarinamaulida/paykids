@@ -52,6 +52,7 @@ function App() {
               {/* {!currentChild  &&  <Button  className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>}  */}
             </div>
         </header>
+      
         
        
         {currentChild && (
@@ -80,6 +81,7 @@ function App() {
      
      
       </div>
+      <hr />
     </BrowserRouter>
   );
 }

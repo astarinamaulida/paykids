@@ -4,7 +4,7 @@ import Button from "muicss/lib/react/button";
 function ChildrensRequestForm() {
   return (
     <main className="container">
-       <p className="heading">Tina: Request Money </p>
+       <p className="heading">Request Money to Mom and Dad </p>
       <article className="frame-send-money">
         <div className="text">
           <p>Request Money</p>

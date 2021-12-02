@@ -4,14 +4,14 @@ export default function CreditCard(props) {
   const childAccountInfo = {
     id: 1,
     child_id: 1,
-    firstName: "Tina",
+    firstName: "Tina Toaster",
     lastName: "Toaster",
     accountNumber: 1,
     virtualDebitNumber: "1234 1234 1234 1234",
     accountBalance: 500,
-    accountCVV: 111,
-    expiryMonth: 10,
-    expiryYear: 22,
+    accountCVV: "CVV 111",
+    expiryMonth: "Expires 10",
+    expiryYear: "22",
   };
   const [firstName, setFirstName] = useState(childAccountInfo.firstName);
   const [lastName, setLastName] = useState(childAccountInfo.lastName);
@@ -57,13 +57,13 @@ export default function CreditCard(props) {
             </div>
             <div className="small-9 columns">
               <label className="labelcc">
-                Card Holder
+                
                 <p className="credit__name">{firstName}</p>
               </label>
             </div>
             <div className="small-3 columns">
               <label className="labelcc">
-                Expires
+                
                 <p className="credit__date">
                   {expirationMonth} / {expirationYear}
                 </p>

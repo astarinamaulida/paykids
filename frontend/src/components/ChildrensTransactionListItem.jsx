@@ -4,7 +4,7 @@ export default function ChildrensTransactionListItem(props) {
   return (
       <div className="row">
         <div className="column-left">{transaction_note}</div>
-        <div className="column-right">${transaction_amount}</div>
+        <div className="column-right">${(transaction_amount).toFixed(2)}</div>
       </div>
   );
 }

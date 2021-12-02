@@ -44,7 +44,7 @@ export default function PageStyling(props) {
   const ORANGE_LOGO = "https://i.ibb.co/J7SPJr8/6.png";
   const DEFAULT_LOGO = "https://i.ibb.co/vByHTtJ/logo-blue.png";
 
-  const [color, setColor] = useState("gold");
+  const [color, setColor] = useState("white");
   const [fontColor, setFontColor] = useState("black");
   const [settingsFrame, setSettingsFrame] = useState("white");
   const [bodyBackground, setBodyBackground] = useState(WHITE);
@@ -112,23 +112,23 @@ export default function PageStyling(props) {
         
       </header>
     <main className="container">
-      <article style={{background: color}} className="frame-send-money">
-        <div className="text">
-          <p>Send Money: Tina</p>
+    <div className="text">
+          <p className="heading">Pick your color style</p>
         </div>
+      <article style={{background: color}} className="frame-send-money">
         <div>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css"/>
           <div>
-            <Button onClick={white} className="button-money">white</Button>
-            <Button onClick={blue} className="button-money">blue</Button>
-            <Button onClick={purple} className="button-money">purple</Button>
+            <Button onClick={white} className="button-money" style={{background: WHITE_BUTTON, border:"1px solid blue"}}>White</Button>
+            <Button onClick={blue} className="button-money" style={{background: BLUE_BUTTON}}>Blue</Button>
+            <Button onClick={purple} className="button-money" style={{background: PURPLE_BUTTON}}>Purple</Button>
           </div>
           <div>
-            <Button onClick={pink} className="button-money">pink</Button>
-            <Button onClick={green} className="button-money">green</Button>
-            <Button onClick={orange} className="button-money2">orange</Button>
+            <Button onClick={pink} className="button-money" style={{background: PINK_BUTTON}}>Pink</Button>
+            <Button onClick={green} className="button-money" style={{background: GREEN_BUTTON}}>Green</Button>
+            <Button onClick={orange} className="button-money2" style={{background: ORANGE_BUTTON}}>Orange</Button>
           </div>
-          <p>Amount to give: {color}</p>
+          <p>Change theme to: {color}</p>
           {/* this is a form need event prvent default */}
           <div>
             <Button style={{background: color, color: fontColor}} className="button-confirm">Confirm</Button>
