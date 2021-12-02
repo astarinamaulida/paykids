@@ -32,7 +32,7 @@ function App() {
       <div className="App">
         <header>
        
-        {!currentChild  && <LandingPageBackground />}
+        {/* {!currentChild  && <LandingPageBackground />} */}
         {/* <div className="landingpage"></div>*/}
       
        
@@ -41,13 +41,15 @@ function App() {
           </div>
           <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>
             <div>
-              {!currentChild  &&  <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link className="link" to="/childrensdashboard">Login</Link></Button> }
+           <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link className="link" to="/childrensdashboard">Login</Link></Button> 
+
+              {/* {!currentChild  &&  <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link className="link" to="/childrensdashboard">Login</Link></Button> } */}
               {currentChild   &&  <Button  primary className="button-dashboard"><Link className="link" to="/childrensdashboard">Dashboard</Link></Button> }
               {currentChild   &&  <Button  primary className="button-settings"><Link className="link" to="/childrenssettings">Settings</Link></Button> }
               {currentChild   &&  <Button  primary className="button-theme"><Link className="link" to="/childrenssettings">Theme</Link></Button> }
               {currentChild   &&  <Button  primary className="button-theme"><Link className="link" to="/style">My Style</Link></Button> }
               {currentChild   &&  <Button  primary className="button-request"><Link className="link" to="/requestform">Request</Link></Button> }
-              {currentChild   &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link className="link" to="/childrenslogin">Logout</Link></Button> }
+              {currentChild   &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link className="link" to="/">Logout</Link></Button> }
               {/* {!currentChild  &&  <Button  className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>}
               {!currentChild  &&  <Button  className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>} */}
             </div>
@@ -63,11 +65,15 @@ function App() {
             <Route path="/requestform"        element={<ChildrensRequestForm />} />
           </Routes>
         )}
-        {!currentChild && (
+        {/* {!currentChild && (
           <Routes>
-            <Route path="/"  />
+            <Route path="/childrenslogin" />
           </Routes>
-         )}
+         )} */}
+   
+          <Routes>
+            <Route path="/" element={<LandingPageBackground />}/>
+          </Routes>
     
         
    
