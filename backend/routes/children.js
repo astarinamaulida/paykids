@@ -8,7 +8,7 @@ let childAccountInfo = {
   firstName: "Tina",
   lastName: "Toaster",
   accountNumber: 1,
-  virtualDebitNumber: '1234 1234 1234 1234',
+  virtualDebitNumber: '    1234 1234 1234 1234',
   accountBalance: 500,
   accountCVV: 111,
   expiryMonth: 10,

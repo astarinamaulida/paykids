@@ -5,10 +5,10 @@ import Button from "muicss/lib/react/button";
 export default function ChildrensDashboard(props) {
   return (
     <main className="container">
-         <p className="heading">Tina: Dashboard </p>
+         <p className="heading">Your Dashboard </p>
       <article className="frame-credit-card">
         <div className="text">
-          <p>Credit Card Information</p>
+          <p>Tina Toaster's Card</p>
         </div>
         <div>
           <link
@@ -16,6 +16,7 @@ export default function ChildrensDashboard(props) {
             href="https://cdnjs.cloudflare.com/ajax/libs/muicss/0.9.41/css/mui.min.css"
           />
           <CreditCard />
+          <p>Money Available: $12.25</p>
         </div>
         <article className="frame-recent">
           <span>
