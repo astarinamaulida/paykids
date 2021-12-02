@@ -30,7 +30,7 @@ function App() {
       <div className="App">
         <header>
        
-        <div className="landingpage"></div>
+        {!currentChild  && <div className="landingpage"></div>}
         {/* <div className="landingpage"></div>
         <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>
         <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button> */}
@@ -47,8 +47,8 @@ function App() {
               {currentChild  &&  <Button  primary className="button-theme"><Link className="link" to="/style">My Style</Link></Button> }
               {currentChild  &&  <Button  primary className="button-request"><Link className="link" to="/requestform">Request</Link></Button> }
               {currentChild  &&  <Button  onClick={() => setCurrentChild(null)} primary className="button-login"><Link className="link" to="/childrenslogin">Logout</Link></Button> }
-              {currentChild  &&  <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>}
-              {currentChild  &&  <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>}
+              {!currentChild  &&  <Button className="button-kids-login"><Link to="/childrenslogin">kids login</Link> </Button>}
+              {!currentChild  &&  <Button className="button-parents-login"><Link to="/childrenslogin">parents login</Link></Button>}
             </div>
          
         </header>
