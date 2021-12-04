@@ -1,13 +1,13 @@
 import "./App.css";
 import Button from "muicss/lib/react/button";
 import ChildrensDashboard from "./components/ChildrensDashboard";
-import ChildrensVisualSettings from "./components/ChildrensVisualSettings";
 import ChildrensLogin from "./components/ChildrensLogin";
 import ChildrensRequestForm from "./components/ChildrensRequestForm";
-import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
-import { useState } from 'react';
+import ChildrensVisualSettings from "./components/ChildrensVisualSettings";
 import PageStyling from "./components/PageStyling";
 import LandingPageBackground from "./components/LandingPageBackground";
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { useState } from 'react';
 
 function App() {
   const [currentChild, setCurrentChild] = useState(null);
