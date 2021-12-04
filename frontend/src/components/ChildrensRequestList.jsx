@@ -20,10 +20,3 @@ export default function ChildrensRequestList(props) {
     </div>
   )
 }
-
- //    <article className="frame">
-  //    <span>
-  //      <p>Recent Transactions</p>
-  //    </span>
-  //    <div className="row">{parsedTransactions}</div>
-  //  </article>
