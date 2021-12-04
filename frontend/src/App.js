@@ -4,7 +4,6 @@ import Button from "muicss/lib/react/button";
 import ChildrensTransactionList from "./components/ChildrensTransactionList";
 import ChildrensRequestList from "./components/ChildrensRequestList";
 import ParentsApprovalList from "./components/ParentsApprovaIList";
-import NavBar from "./components/NavBar";
 import ParentsChildrenListItem from "./components/ParentsChildrenListItem";
 import ParentsChildrenList from "./components/ParentsChidlrenList";
 import ParentsDashboard from "./components/ParentsDashboard";
