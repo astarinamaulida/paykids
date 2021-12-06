@@ -6,11 +6,11 @@ Scheduler is a single page React application that allows users to book and cance
 ## Final Product
 
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/01_landing_login_page.gif)
-!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/02_dashboard.png)
-!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/03_request_money.png)
-!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/04_choose_cards.png)
-!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/05_choose_theme.png)
-!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/06_logout.png)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/02_dashboard.gif)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/03_request_money.gif)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/04_choose_cards.gif)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/05_choose_theme.gif)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/06_logout.gif)
 
 
 ## Frontend Dependencies
