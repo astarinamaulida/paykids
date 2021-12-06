@@ -55,8 +55,6 @@ PayKids is a multi-page React application, that allows children to customize the
 
 ## Getting Started
 
-- Install all dependencies (using the `npm install` command).
-
 ```sh
 npm install
 ```
@@ -66,13 +64,13 @@ npm install
 npm start
 ```
 
-## Seed Database
+## Seed The Database Using the following command
 
 ```sh
 npm db:reset
 ```
 
-## TODO
+## TODO:
 - Add schemas and seed data for updated frontend
 - Create new backend endpoints
 - Refacor 
@@ -80,7 +78,7 @@ npm db:reset
 
 
 
-## NOTE:  The creative commons license are meant for the app design and user interfaces 
+## NOTE:  The creative commons license is meant for the app design and user interfaces 
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
