@@ -54,17 +54,28 @@ PayKids is a multi-page React application, that allows children to customize the
 
 
 ## Getting Started
+- Use the following Frontend and Backend to install dependencies
 
 ```sh
 npm install
 ```
+
+## Know Package Version Issue 
+- Use the following install command if there is a Muicss version error
+
+```sh
+npm install --save muicss --legacy-peer-deps
+```
+
 ## Running Webpack Developmement Server or Express
+- Use the 
 
 ```sh
 npm start
 ```
 
-## Seed The Database Using the following command
+## Seeding The Database
+- Seed and reset the database using the following command
 
 ```sh
 npm db:reset
