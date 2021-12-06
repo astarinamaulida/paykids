@@ -1,16 +1,26 @@
-# LHL Final Project  PayKids
+# Project:  PayKids
 
-Scheduler is a single page React application that allows users to book and cancel interviews in real time.
+PayKids is a multipage React application that allows children use and customize their own virtual debit cards and bank accounts.
 
 
-## Final Product
-
+## PayKids Landing Page and Login
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/01_landing_login_page.gif)
+
+## PayKids Childrens Dashboard
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/02_dashboard.gif)
+
+## PayKids Childrens Request Money
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/03_request_money.gif)
+
+## PayKids Childrens Personalised Virtual Debit Card
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/04_choose_cards.gif)
+
+## PayKids Childrens Personalize Account Theme
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/05_choose_theme.gif)
+
+## PayKids Childrens Logout
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/06_logout.gif)
+
 
 
 ## Frontend Dependencies
@@ -60,4 +70,5 @@ npm db:reset
 ## TODO
 - Add schemas and seed data for updated frontend
 - Create new backend endpoints
+- Refacor 
 - Create Parents UI/UX
