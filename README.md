@@ -1,1 +1,57 @@
 LHL Final Project   
+# Interview Scheduler
+
+Scheduler is a single page React application that allows users to book and cancel interviews in real time.
+
+
+## Final Product
+
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/01_landing_login_page.png)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/02_dashboard.png)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/03_request_money.png)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/04_choose_cards.png)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/05_choose_theme.png)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/06_logout.png)
+
+
+## Frontend Dependencies
+- React                       ^16.9.0 
+- React-dom                   ^17.0.2
+- React-router-dom            ^6.0.2
+- React-scripts                4.0.3
+- Axios                       ^0.24.0
+- Muicss                      ^0.10.3
+- Testing-library/react       ^8.0.7
+- Testing-library/react-hooks  7.0.2
+- Testing-library/jest-dom    ^4.0.0
+
+
+
+
+
+## Getting Started
+
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `node express_server.js` command.
+
+## Setup
+
+Install dependencies with `npm install`.
+
+## Running Webpack Development Server
+
+```sh
+npm start
+```
+
+## Running Jest Test Framework
+
+```sh
+npm test
+```
+
+## Running Storybook Visual Testbed
+
+```sh
+npm run storybook
+```
