@@ -25,6 +25,18 @@ Scheduler is a single page React application that allows users to book and cance
 - Testing-library/react-hooks  7.0.2
 - Testing-library/jest-dom    ^4.0.0
 
+## Backend Dependencies
+- chalk                       ^4.1.2
+- cookie-parser               ~1.4.4
+- cookie-session              ^1.4.0
+- cors                        ^2.8.5
+- debug                       ~2.6.9
+- dotenv                      ^10.0.0
+- express                     ~4.16.1
+- morgan                      ~1.9.1
+- pg                          ^8.7.1
+- pg-native                   ^3.0.0 
+- uuid                        ^8.3.2
 
 
 
@@ -50,8 +62,3 @@ npm start
 npm test
 ```
 
-## Running Storybook Visual Testbed
-
-```sh
-npm run storybook
-```
