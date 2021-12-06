@@ -1,29 +1,30 @@
 # Project:  PayKids
 
-PayKids is a multi-page React application, that allows children to customize their own virtual debit cards and bank accounts.
+PayKids is a multi-page React application, that allows children to customise their own virtual debit cards and bank account virtual settings.
 
+This application uses React, Postgres, Node and Express
 
-## - PayKids: Landing Page and Login Form
+## PayKids: Landing Page and Login Form
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/01_landing_login_page.gif)
 
 
-## - PayKids: Childrens Dashboard
+## PayKids: Childrens Dashboard
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/02_dashboard.gif)
 
 
-## - PayKids: Request Money Form
+## PayKids: Request Money Form
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/03_request_money.gif)
 
 
-## - PayKids: Personalised Virtual Debit Card
+## PayKids: Personalised Virtual Debit Card
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/04_choose_cards.gif)
 
 
-## - PayKids: Personalize Account Theme
+## PayKids: Personalize Account Theme
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/05_choose_theme.gif)
 
 
-## - PayKids:  Logout Screen to Landing Page
+## PayKids:  Logout Screen to Landing Page
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/06_logout.gif)
 
 
