@@ -38,26 +38,25 @@ Scheduler is a single page React application that allows users to book and cance
 - uuid                        ^8.3.2
 
 
-
-
 ## Getting Started
 
 - Install all dependencies (using the `npm install` command).
-- Run the development web server using the `node express_server.js` command.
 
-## Setup
-
-Install dependencies with `npm install`.
-
-## Running Webpack Development Server
+```sh
+npm install
+```
+## Running Webpack Developmement Server or Express
 
 ```sh
 npm start
 ```
 
-## Running Jest Test Framework
+## Seed Database
 
 ```sh
-npm test
+npm db:reset
 ```
 
+## TODO
+- Add schemas and seed data for updated frontend
+- Create new backend endpoints
