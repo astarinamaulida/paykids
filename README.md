@@ -1,24 +1,29 @@
 # Project:  PayKids
 
-PayKids is a multipage React application that allows children use and customize their own virtual debit cards and bank accounts.
+PayKids is a multi-page React application, that allows children to customize their own virtual debit cards and bank accounts.
 
 
-## PayKids Landing Page and Login
+## - PayKids Landing Page and Login Form
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/01_landing_login_page.gif)
 
-## PayKids Childrens Dashboard
+
+## - PayKids Childrens Dashboard
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/02_dashboard.gif)
 
-## PayKids Childrens Request Money
+
+## - PayKids Request Money Form
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/03_request_money.gif)
 
-## PayKids Childrens Personalised Virtual Debit Card
+
+## - PayKids Personalised Virtual Debit Card
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/04_choose_cards.gif)
 
-## PayKids Childrens Personalize Account Theme
+
+## - PayKids Personalize Account Theme
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/05_choose_theme.gif)
 
-## PayKids Childrens Logout
+
+## - PayKids  Logout Screen to Landing Page
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/06_logout.gif)
 
 
@@ -72,3 +77,6 @@ npm db:reset
 - Create new backend endpoints
 - Refacor 
 - Create Parents UI/UX
+
+
+
