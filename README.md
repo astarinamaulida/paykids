@@ -23,7 +23,7 @@ PayKids is a multi-page React application, that allows children to customize the
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/05_choose_theme.gif)
 
 
-## - PayKids  Logout Screen to Landing Page
+## - PayKids:  Logout Screen to Landing Page
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/06_logout.gif)
 
 
@@ -68,7 +68,7 @@ npm install --save muicss --legacy-peer-deps
 ```
 
 ## Running Webpack Developmement Server or Express
-- Use the 
+- Use the following command to start the frondend and backend from within each app root directory
 
 ```sh
 npm start
