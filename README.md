@@ -5,7 +5,7 @@ Scheduler is a single page React application that allows users to book and cance
 
 ## Final Product
 
-!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/feature/38_update_readme/docs/01_landing_login_page.gif)
+!["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/01_landing_login_page.gif)
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/02_dashboard.png)
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/03_request_money.png)
 !["Screenshot of URLs page"](https://github.com/nsagias/lhl_final/blob/master/docs/04_choose_cards.png)
