@@ -18,7 +18,7 @@ function App() {
         <header>
            {currentChild  && <img className="nav__logo" src="https://i.ibb.co/vByHTtJ/logo-blue.png"/>}
           <div>
-            {!currentChild  &&  <Button  onClick={() => setCurrentChild({name: "Tina"})} primary className="button-login"><Link className="link" to="/childrensdashboard">Login</Link></Button> }
+            
             {currentChild   &&  <Button  primary className="button-dashboard"><Link className="link" to="/childrensdashboard">Dashboard</Link></Button> }
             {currentChild   &&  <Button  primary className="button-settings"><Link className="link" to="/childrenssettings">Choose Card</Link></Button> }
             {currentChild   &&  <Button  primary className="button-theme"><Link className="link" to="/style">Choose Theme</Link></Button> }

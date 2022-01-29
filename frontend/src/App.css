@@ -1,7 +1,8 @@
 p.title {
-	margin-top: 30px;
+	margin-top: 25px;
+	margin-left: 50px;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 22px;
 	color: rgb(82, 82, 82);
 	font-family: 'Quicksand', sans-serif;
 }
@@ -53,72 +54,59 @@ h3 {
 
 
 .App {
-	text-align: center;
-	background-color: rgb(255, 255, 255);
-	width: 100%;
-	position: absolute;
-	flex-direction: column;
-	display: flex;
-	border: 1px solid white;
-	box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04),
-		0px 16px 24px rgba(0, 0, 0, 0.04),
-		0px 4px 8px rgba(0, 0, 0, 0.04),
-		0px 0px 1px rgba(0, 0, 0, 0.04);
-	border-radius: 59px;
-	height: 3500px;
+  width: 100%;
+  min-height: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ededed;
+  border-radius: 20px;
+  opacity: 95%;
 }
 
 .mui-btn.button-kids-login{
 	color: white;
 	border: none;
-	font-size: 20px;
-	background-color: #197BBD;
+	font-size: 16px;
+	background-color:#677491;
 	font-weight: bold;
-	opacity: 0.85;
-	width: 200px;
-	height: 50px;
+	opacity: 0.9;
+	width: 180px;
+	height: 40px;
 	position: absolute;
-	margin-top: -350px;
-	left: 180px;
+	margin-top: -250px;
+	left: 125px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px rgb(136, 136, 136);
-	border-radius: 20px;
 	z-index: 900;
 }
 
-.mui-btn.button-kids-login:hover{
-	background-color:  #197bbda8;
+.mui-btn.button-kids-login:hover, .mui-btn.button-parents-login:hover{
+	background-color:  #6b799a;
 }
 
 .mui-btn.button-parents-login{
 	color: white;
 	border: none;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
-	background-color: #197BBD;
+	background-color:#677491;
 	opacity: 0.85;
-	height: 50px;
+	height: 40px;
 	position: absolute;
-	width: 200px;
-	margin-top: -350px;
-	left: 420px;
+	width: 180px;
+	margin-top: -250px;
+	left: 350px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px rgb(136, 136, 136);
 }
-
-.mui-btn.button-parents-login:hover{
-background-color: #197bbda8;
-}
-
 
 a.link {
 	color: white !important;
@@ -512,11 +500,9 @@ p {
 
 .credit {
 	margin-top: -40px;
-	margin-bottom: 30px;
-	margin-left: -190px;
-	margin-left: px;
-	height: 250px;
-	width: 400px;
+	margin-left: -150px;
+	height: 190px;
+	width: 300px;
 	border: 0;
 	border-radius: 20px;
 	background: url(https://i.ibb.co/bRxw8RD/kids-1.png) no-repeat center center;
@@ -536,12 +522,11 @@ p {
 }
 
 .cc_inside {
-	height: 91px;
 	padding-top: 120px;
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 20px;
 	margin-top: 60px;
-	margin-left: -150px;
+	margin-left: 16px;
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -605,8 +590,7 @@ label.labelcc {
 .frame-login {
 	display: flex;
 	padding: 10px;
-	height: 650px;
-	width: 700px;
+	width: 450px;
 	font-family: 'Quicksand', sans-serif;
 	align-items: center;
 	flex-direction: column;
@@ -615,8 +599,8 @@ label.labelcc {
 	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 20%);
 	box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 	border-radius: 28px;
-	top: 350px;
-	margin-left: -710px;
+	top: 250px;
+	margin-left: -680px;
 }
 
 .mui-btn.button-login {
@@ -688,34 +672,32 @@ label.labelcc {
 .mui-btn.button-loginpage {
 	color: white;
 	border: none;
-	font-size: 20px;
+	font-size: 15px;
 	background-color: #ffc107;
 	opacity: 0.85;
 	font-weight: bold;
 	width: 150px;
-	height: 50px;
+	height: 40px;
 	position: absolute;
 	right: 285px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	border-radius: 20px;
 	font-family: 'Quicksand', sans-serif;
 	box-shadow: 0 10px 10px #ccc;
 	z-index: 900;
 }
 
 input {
-	font-size: 22px;
+	font-size: 16px;
 	font-family: 'Quicksand', sans-serif;
-	margin-bottom: 100px;
 	left: 0;
 	margin: 10px;
 	border: none;
 	border-radius: 10px;
 	height: 50px;
-	width: 350px;
+	width: 300px;
 	text-align: center;
 	color: black;
 	background-color: #ffffff;
